@@ -354,6 +354,39 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/12/14/rpi/" >
+            
+                <span>树莓派4b</span>
+        </a>
+        <div class="abstract-content">
+            树莓派4b折腾笔记硬件如果OS运行在TF卡上，一定要用高速TF卡，我选用的是SanDisk Extreme PRO 32 GB。
+装系统装完系统先给LAN配个静态ip
+考虑到图形界面的开销很大，我装了一个Ubuntu server 20.04，TF卡镜像写完开机即用，无需安装系统。
+同时由于没有图形界面，需要连Wifi的话：
+12345ip link # 查看各个网卡状态iw dev wlan0 scan | grep SSID # 扫描附近的SSIDwpa_passphrase &quot;&lt;SSID&gt;&quot; &quot;&lt;Password&gt;&quot; ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/12/14</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "OS">OS</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/12/14/MLonSrcCode/" >
             
                 <span>基于源代码的机器学习</span>
@@ -789,9 +822,22 @@ Create a n...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 8
+        Total : 9
         </div>
         <!-- search  -->
         
@@ -804,6 +850,11 @@ Create a n...
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/14</span><a class="archive-post-title" href= "/2020/12/14/rpi/" >树莓派4b</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -859,6 +910,8 @@ Create a n...
         <span class="sidebar-tag-name" data-tags="Security"><span class="iconfont-archer">&#xe606;</span>Security</span>
     
         <span class="sidebar-tag-name" data-tags="C++"><span class="iconfont-archer">&#xe606;</span>C++</span>
+    
+        <span class="sidebar-tag-name" data-tags="OS"><span class="iconfont-archer">&#xe606;</span>OS</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
