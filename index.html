@@ -367,6 +367,51 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2021/01/09/linuxBoot/" >
+            
+                <span>Linux 手动引导</span>
+        </a>
+        <div class="abstract-content">
+            服务器断电后重启，引导出错，需要手动引导进入系统。
+Linux启动流程
+BIOS程序
+GRUB引导
+内核引导
+调用虚拟文件系统initrd
+加载驱动
+加载真正的根文件系统
+执行/sbin/init
+系统初始化
+
+
+启动终端
+
+GRUB手动引导内核在grub shell中ls查看硬盘分区情况，常见的分区方案是，对于硬盘sdx，sdx1为boot分区(/boot)，sdx2为swap分区([SWAP])，sdx3为根分区(/)。
+逐个尝试ls (hdx, y)/boot/grub，找到根文件系统所在分区（通常y=gpt3），也可以ls (hdx, y)查看该分区下所有文件。
+如果手上有Liv...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2021/01/08/kms/" >
             
                 <span>Win10激活-自建KMS服务器</span>
@@ -672,41 +717,11 @@ PyTorch 梯度传播的笔记mean,max之类的函数不参与梯度运算
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/01/01/hello-world/" >
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartConfiguration1vim _config.yml
-
-Theme Configuration1vim theme/archer/_config.yml
-
-Create a n...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/01/01</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Manual">Manual</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
+    
+    <nav class="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">NEXT &gt;</a>
+    </nav>
     
 </main>
             <!-- profile -->
@@ -996,9 +1011,22 @@ Create a n...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 10
+        Total : 11
         </div>
         <!-- search  -->
         
@@ -1011,6 +1039,11 @@ Create a n...
     
     <div class="archive-year"> 2021 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/09</span><a class="archive-post-title" href= "/2021/01/09/linuxBoot/" >Linux 手动引导</a>
+        </li>
     
     
         <li class="archive-post-item">
