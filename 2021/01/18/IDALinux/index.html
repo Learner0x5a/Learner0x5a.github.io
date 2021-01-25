@@ -28,7 +28,7 @@
 <meta property="og:description" content="IDA-Linux-ConfConfigure IDA pro linux version to support custom python&#x2F;pip. 配置linux版IDA，支持自己的python&#x2F;pip。 Tested with IDA pro 6.8 on Ubuntu 18.04 64bit. 32位环境配置；32bit enviroment123456dpkg --add-archite">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-18T14:42:07.000Z">
-<meta property="article:modified_time" content="2021-01-19T07:44:50.749Z">
+<meta property="article:modified_time" content="2021-01-25T15:33:06.696Z">
 <meta property="article:author" content="Learner0x5a">
 <meta property="article:tag" content="Security">
 <meta property="article:tag" content="Tools">
@@ -288,7 +288,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">626</span>Reading time: <span class="post-count reading-time">3 min</span></span>
+                        <span>Word count: <span class="post-count word-count">651</span>Reading time: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -452,6 +452,9 @@ height:50vh;
 <p>IDA PRO 6.8自带的python2.7要求openssl版本为32bit 0.9.8，并且openssl1.0.0和0.9.8不兼容，所以不能通过创建软链接的方式解决，需要安装openssl0.9.8版本。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/o/openssl098/libssl0.9.8_0.9.8o-7ubuntu3.2_i386.deb</span></span><br><span class="line">wget http://snapshot.debian.org/archive/debian/20110406T213352Z/pool/main/o/openssl098/libssl0.9.8_0.9.8o-7_i386.deb</span><br><span class="line">dpkg -i install libssl0.9.8_0.9.8o-7_i386.deb</span><br></pre></td></tr></table></figure>
 
+
+<h2 id="Bug-TVision-error-Can-not-load-libcurses-so-Without-libcurses-can-work-only-with-xterm-linux"><a href="#Bug-TVision-error-Can-not-load-libcurses-so-Without-libcurses-can-work-only-with-xterm-linux" class="headerlink" title="Bug: TVision error: Can not load libcurses.so Without libcurses can work only with xterm/linux"></a>Bug: TVision error: Can not load libcurses.so Without libcurses can work only with xterm/linux</h2><p>设置环境变量</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> TERM=xterm</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
@@ -459,7 +462,7 @@ height:50vh;
             <p>Author：<a href="https://learner0x5a.github.io">Learner0x5a</a>
             <p>原文链接：<a href="https://learner0x5a.github.io/2021/01/18/IDALinux/">https://learner0x5a.github.io/2021/01/18/IDALinux/</a>
             <p>发表日期：<a href="https://learner0x5a.github.io/2021/01/18/IDALinux/">January 18th 2021, 10:42:07 pm</a>
-            <p>更新日期：<a href="https://learner0x5a.github.io/2021/01/18/IDALinux/">January 19th 2021, 3:44:50 pm</a>
+            <p>更新日期：<a href="https://learner0x5a.github.io/2021/01/18/IDALinux/">January 25th 2021, 11:33:06 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -588,7 +591,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IDA-Linux-Conf"><span class="toc-number">1.</span> <span class="toc-text">IDA-Linux-Conf</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#32%E4%BD%8D%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%EF%BC%9B32bit-enviroment"><span class="toc-number">1.1.</span> <span class="toc-text">32位环境配置；32bit enviroment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84python-pip%EF%BC%9BUse-custom-python-pip"><span class="toc-number">1.2.</span> <span class="toc-text">使用自己的python&#x2F;pip；Use custom python&#x2F;pip</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E4%B8%80%E4%B8%AA32%E4%BD%8D%E7%9A%84python2-7%EF%BC%9BCompile-a-32-bit-python2-7"><span class="toc-number">1.2.1.</span> <span class="toc-text">编译一个32位的python2.7；Compile a 32-bit python2.7</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E7%BC%96%E8%AF%91%E5%BE%97%E5%88%B0%E7%9A%84pip%E5%AE%89%E8%A3%85%E6%83%B3%E8%A6%81%E7%9A%84%E5%8C%85%EF%BC%9BUse-compiled-python-pip-to-install-whatever-you-want"><span class="toc-number">1.2.2.</span> <span class="toc-text">使用编译得到的pip安装想要的包；Use compiled python-pip to install whatever you want</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85%EF%BC%9BUse-installed-packages"><span class="toc-number">1.2.3.</span> <span class="toc-text">使用安装的包；Use installed packages</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bug-code-for-hash-md5-was-not-found"><span class="toc-number">1.3.</span> <span class="toc-text">Bug: code for hash md5 was not found</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IDA-Linux-Conf"><span class="toc-number">1.</span> <span class="toc-text">IDA-Linux-Conf</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#32%E4%BD%8D%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%EF%BC%9B32bit-enviroment"><span class="toc-number">1.1.</span> <span class="toc-text">32位环境配置；32bit enviroment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84python-pip%EF%BC%9BUse-custom-python-pip"><span class="toc-number">1.2.</span> <span class="toc-text">使用自己的python&#x2F;pip；Use custom python&#x2F;pip</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E4%B8%80%E4%B8%AA32%E4%BD%8D%E7%9A%84python2-7%EF%BC%9BCompile-a-32-bit-python2-7"><span class="toc-number">1.2.1.</span> <span class="toc-text">编译一个32位的python2.7；Compile a 32-bit python2.7</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E7%BC%96%E8%AF%91%E5%BE%97%E5%88%B0%E7%9A%84pip%E5%AE%89%E8%A3%85%E6%83%B3%E8%A6%81%E7%9A%84%E5%8C%85%EF%BC%9BUse-compiled-python-pip-to-install-whatever-you-want"><span class="toc-number">1.2.2.</span> <span class="toc-text">使用编译得到的pip安装想要的包；Use compiled python-pip to install whatever you want</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85%EF%BC%9BUse-installed-packages"><span class="toc-number">1.2.3.</span> <span class="toc-text">使用安装的包；Use installed packages</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bug-code-for-hash-md5-was-not-found"><span class="toc-number">1.3.</span> <span class="toc-text">Bug: code for hash md5 was not found</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bug-TVision-error-Can-not-load-libcurses-so-Without-libcurses-can-work-only-with-xterm-linux"><span class="toc-number">1.4.</span> <span class="toc-text">Bug: TVision error: Can not load libcurses.so Without libcurses can work only with xterm&#x2F;linux</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
