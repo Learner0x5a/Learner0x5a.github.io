@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2021-02-01T15:51:59.867Z</updated>
+  <updated>2021-02-07T03:27:04.925Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实用网站收集</title>
+    <link href="https://learner0x5a.github.io/2021/02/07/websitecollection/"/>
+    <id>https://learner0x5a.github.io/2021/02/07/websitecollection/</id>
+    <published>2021-02-07T03:20:45.000Z</published>
+    <updated>2021-02-07T03:27:04.925Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="翻译"><a href="#翻译" class="headerlink" title="翻译"></a>翻译</h1><p><a href="https://www.deepl.com/translator">deepl</a></p><h1 id="IDA"><a href="#IDA" class="headerlink" title="IDA"></a>IDA</h1><p><a href="https://magiclantern.fandom.com/wiki/IDAPython">IDA Python wiki</a><br><a href="http://www.idabook.com/">IDA Book</a></p><h1 id="社工"><a href="#社工" class="headerlink" title="社工"></a>社工</h1><p><a href="https://haveibeenpwned.com/">密码撞库检查</a></p><h1 id="黑苹果"><a href="#黑苹果" class="headerlink" title="黑苹果"></a>黑苹果</h1><p><a href="http://blog.daliansky.net/">黑果小兵</a></p><h1 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h1><p><a href="https://godbolt.org/">Compiler Explorer</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;翻译&quot;&gt;&lt;a href=&quot;#翻译&quot; class=&quot;headerlink&quot; title=&quot;翻译&quot;&gt;&lt;/a&gt;翻译&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.deepl.com/translator&quot;&gt;deepl&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;IDA&quot;&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="Tools" scheme="https://learner0x5a.github.io/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>以孝治国：孝与家国伦理</title>
