@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://learner0x5a.github.io/images/Transformer.jpg">
 <meta property="og:image" content="https://learner0x5a.github.io/images/Attention_Mask&Multi-head.jpg">
 <meta property="article:published_time" content="2020-12-14T11:51:22.000Z">
-<meta property="article:modified_time" content="2021-02-18T13:24:45.943Z">
+<meta property="article:modified_time" content="2021-02-18T13:25:58.570Z">
 <meta property="article:author" content="Learner0x5a">
 <meta property="article:tag" content="AI">
 <meta name="twitter:card" content="summary">
@@ -424,7 +424,8 @@ height:50vh;
     <article class="article-entry">
         <h1 id="seq2seq-amp-attention"><a href="#seq2seq-amp-attention" class="headerlink" title="seq2seq &amp; attention"></a>seq2seq &amp; attention</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>大多数attention都是时域attention，即关注输入序列（或者encoder的输出序列）中各个timestep的数据的不同贡献<br>那么频域attention该怎么做呢？比如要关注图像的某一部分对分类器的贡献？<br>最普通的，例如一个<code>MLP1 + Attention + MLP2</code>的结构，MLP的输出shape为(batch_size,hidden_dim)，即timestep为1，怎么算attention？<br>timestep为1的时候，softmax-&gt;sigmoid，概率分布不存在了，按原算法得到的attention是一个shape为(batch_size,1,1)的张量乘上encoder_output，相当于对每个feature乘上一个实数，意义是什么？</p>
 <p>Update 2021-02-18: 参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/u010848594/article/details/107413620">这里</a>。<br>把握住attention的本质是加权，由此，<br>卷积网络里有两种attention，一种是通道attention，对各个feature map加权；一种是空间attention，利用卷积运算获得spatial attention。</p>
-<h1 id="PyTorch-Misc"><a href="#PyTorch-Misc" class="headerlink" title="PyTorch Misc"></a>PyTorch Misc</h1><h2 id="LSTM的返回值"><a href="#LSTM的返回值" class="headerlink" title="LSTM的返回值"></a>LSTM的返回值</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">output(seq_len, batch, hidden_size * num_directions) <span class="comment"># 每个timestep，最后(深)一层的神经元输出的拼接  </span></span><br><span class="line">hn(num_layers * num_directions, batch, hidden_size) <span class="comment"># 最后一个timestep，所有神经元的输出  </span></span><br><span class="line">cn(num_layers * num_directions, batch, hidden_size) <span class="comment"># 最后一个timestep，所有神经元的细胞状态  </span></span><br></pre></td></tr></table></figure>
+<h1 id="PyTorch-Misc"><a href="#PyTorch-Misc" class="headerlink" title="PyTorch Misc"></a>PyTorch Misc</h1><h2 id="LSTM的返回值"><a href="#LSTM的返回值" class="headerlink" title="LSTM的返回值"></a>LSTM的返回值</h2><p>code: </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">output(seq_len, batch, hidden_size * num_directions) <span class="comment"># 每个timestep，最后(深)一层的神经元输出的拼接  </span></span><br><span class="line">hn(num_layers * num_directions, batch, hidden_size) <span class="comment"># 最后一个timestep，所有神经元的输出  </span></span><br><span class="line">cn(num_layers * num_directions, batch, hidden_size) <span class="comment"># 最后一个timestep，所有神经元的细胞状态  </span></span><br></pre></td></tr></table></figure>
 
 <h2 id="inplace-True"><a href="#inplace-True" class="headerlink" title="inplace=True"></a><code>inplace=True</code></h2><p>激活函数例如<code>nn.LeakyReLU(inplace=True)</code>中<code>inplace=True</code>的意思是进行原地操作，例如<code>x=x+5</code>，对于Conv2d这样的上层网络传递下来的tensor直接进行修改，好处就是可以节省运算内存。</p>
 <h2 id="dim-1"><a href="#dim-1" class="headerlink" title="dim=-1"></a><code>dim=-1</code></h2><p>dim=-1意为对最后一维进行操作</p>
@@ -455,7 +456,7 @@ height:50vh;
             <p>Author：<a href="https://learner0x5a.github.io">Learner0x5a</a>
             <p>原文链接：<a href="https://learner0x5a.github.io/2020/12/14/attention/">https://learner0x5a.github.io/2020/12/14/attention/</a>
             <p>发表日期：<a href="https://learner0x5a.github.io/2020/12/14/attention/">December 14th 2020, 7:51:22 pm</a>
-            <p>更新日期：<a href="https://learner0x5a.github.io/2020/12/14/attention/">February 18th 2021, 9:24:45 pm</a>
+            <p>更新日期：<a href="https://learner0x5a.github.io/2020/12/14/attention/">February 18th 2021, 9:25:58 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
