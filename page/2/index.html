@@ -368,12 +368,17 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/12/14/attention/" >
+        <a class="abstract-title" href = "/2020/12/14/MLonSrcCode/" >
             
-                <span>attention机制的理解</span>
+                <span>基于源代码的机器学习</span>
         </a>
         <div class="abstract-content">
-            seq2seq &amp; attention问题大多数attention都是时域attention，即关注输入序列（或者encoder的输出序列）中各个timestep的数据的不同贡献那么频域attention该怎么做呢？比如要关注图像的某一部分对分类器的贡献？最普通的，例如一个MLP1 + Attention + MLP2的结构，MLP的输出shape为(batch_size,hidden_dim)，即timestep为1，怎么算attention？timestep为1的时候，softmax-&gt;sigmoid，概率分布不存在了，按原算法得到的attention是一个shape为...
+            基于源代码的机器学习ML4CODE本领域主要关注三方面问题：
+  * 代码生成
+  * 代码表示
+  * 模式识别
+CodRep代码表示学习的比赛，给定源代码，要求修补源代码中的bug
+论文程序生成Synthetic Datasets for Neural Program Synthesis, ICLR 2019Execution-Guided Neural Program Synthesis, ICLR 2019DeepFuzz: Automatic Generation of Syntax Valid C Programs for Fuzz Testing,AAAI 2019Towa...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -386,6 +391,8 @@ height:50vh;
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
     
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Security">Security</a>
+    
 </div>
             
         </div>
@@ -397,14 +404,12 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/12/14/pytorch-notes/" >
+        <a class="abstract-title" href = "/2020/12/14/attention/" >
             
-                <span>pytorch笔记</span>
+                <span>attention机制的理解</span>
         </a>
         <div class="abstract-content">
-            PyTorch Batch训练的一些笔记根据可视化结果，batch size越小，得到的分类边界更精细，收敛更好，但收敛越慢，batch size过小，就会导致震荡甚至无法收敛。batch size越大，收敛越快，但分类边界比较粗糙。
-PyTorch 梯度传播的笔记mean,max之类的函数不参与梯度运算
-123456789101112131415161718192021222324252627tensor = torch.FloatTensor([[1,2],[3,4]])  variable = Variable(tensor, requires_grad=True)  t_out ...
+            seq2seq &amp; attention问题大多数attention都是时域attention，即关注输入序列（或者encoder的输出序列）中各个timestep的数据的不同贡献那么频域attention该怎么做呢？比如要关注图像的某一部分对分类器的贡献？最普通的，例如一个MLP1 + Attention + MLP2的结构，MLP的输出shape为(batch_size,hidden_dim)，即timestep为1，怎么算attention？timestep为1的时候，softmax-&gt;sigmoid，概率分布不存在了，按原算法得到的attention是一个shape为...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
