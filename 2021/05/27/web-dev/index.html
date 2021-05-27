@@ -28,7 +28,7 @@
 <meta property="og:description" content="web开发HTML 定义了网页的内容12345678910111213&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;&lt;title&gt;菜鸟教程(runoob.com)&lt;&#x2F;title&gt;&lt;&#x2F;head&gt;&lt;body&gt;    &lt;h1&gt;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-05-27T06:35:12.000Z">
-<meta property="article:modified_time" content="2021-05-27T14:38:07.439Z">
+<meta property="article:modified_time" content="2021-05-27T14:40:54.223Z">
 <meta property="article:author" content="Learner0x5a">
 <meta property="article:tag" content="BookReading">
 <meta name="twitter:card" content="summary">
@@ -286,7 +286,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">409</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">355</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -422,13 +422,10 @@ height:50vh;
 
 <h3 id="HTML-属性"><a href="#HTML-属性" class="headerlink" title="HTML 属性"></a>HTML 属性</h3><p>HTML元素可以设置属性 <br>属性可以在元素中添加附加信息 <br>属性一般描述于开始标签 <br>属性总是以名称/值对的形式出现，比如：<code>name=&quot;value&quot;; href=&quot;https://www.runoob.com&quot;; id=&quot;demo&quot;</code> <br>属性之间空格分开</p>
 <h2 id="CSS-描述了网页的布局"><a href="#CSS-描述了网页的布局" class="headerlink" title="CSS 描述了网页的布局"></a>CSS 描述了网页的布局</h2><p>CSS其实是HTML的<style>元素</p>
-<h3 id="内部样式表-Internal-style-sheet"><a href="#内部样式表-Internal-style-sheet" class="headerlink" title="内部样式表(Internal style sheet)"></a>内部样式表(Internal style sheet)</h3><p>在HTML的<head>段定义各个元素的<style>：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-tag">hr</span> &#123;<span class="attribute">color</span>:sienna;&#125;</span></span><br><span class="line"><span class="css"><span class="selector-tag">p</span> &#123;<span class="attribute">margin-left</span>:<span class="number">20px</span>;&#125;</span></span><br><span class="line"><span class="css"><span class="selector-tag">body</span> &#123;<span class="attribute">background-image</span>:<span class="built_in">url</span>(<span class="string">&quot;images/back40.gif&quot;</span>);&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<!-- ### 内部样式表(Internal style sheet)
 
-<!-- ### 外部样式表(External style sheet) 
-
-为了迁移方便，独立出去成为一个CSS文件，在HTML中<head>部分用<link>引用：
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;mystyle.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+在HTML的<head>段定义各个元素的<style>：
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">hr</span> &#123;<span class="attribute">color</span>:sienna;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">p</span> &#123;<span class="attribute">margin-left</span>:<span class="number">20px</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">body</span> &#123;<span class="attribute">background-image</span>:<span class="built_in">url</span>(<span class="string">&quot;images/back40.gif&quot;</span>);&#125;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">``` --&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- ### 外部样式表(External style sheet) </span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">为了迁移方便，独立出去成为一个CSS文件，在HTML中&lt;head&gt;部分用&lt;link&gt;引用：</span></span><br><span class="line"><span class="comment">```html</span></span><br><span class="line"><span class="comment">    &lt;head&gt;</span></span><br><span class="line"><span class="comment">    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</span></span><br><span class="line"><span class="comment">    &lt;/head&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>CSS文件：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hr &#123;color:sienna;&#125;</span><br><span class="line">p &#123;margin-left:20px;&#125;</span><br><span class="line">body &#123;background-image:url(&quot;/images/back40.gif&quot;);&#125;</span><br></pre></td></tr></table></figure>
@@ -468,7 +465,7 @@ height:50vh;
             <p>Author：<a href="https://learner0x5a.github.io">Learner0x5a</a>
             <p>原文链接：<a href="https://learner0x5a.github.io/2021/05/27/web-dev/">https://learner0x5a.github.io/2021/05/27/web-dev/</a>
             <p>发表日期：<a href="https://learner0x5a.github.io/2021/05/27/web-dev/">May 27th 2021, 2:35:12 pm</a>
-            <p>更新日期：<a href="https://learner0x5a.github.io/2021/05/27/web-dev/">May 27th 2021, 10:38:07 pm</a>
+            <p>更新日期：<a href="https://learner0x5a.github.io/2021/05/27/web-dev/">May 27th 2021, 10:40:54 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
