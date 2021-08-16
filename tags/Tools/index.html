@@ -355,6 +355,37 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2021/08/16/hyper-share/" >
+            
+                <span>Hyper-V挂载共享文件夹</span>
+        </a>
+        <div class="abstract-content">
+            Windows Host + Ubuntu GuestHost配置在资源管理器中的磁盘，例如D:\上右键-属性-共享-高级共享-勾选共享此文件夹，记一下网络路径，比如Desktop-jpjdlkr\d
+其实可以对磁盘中具体的某个文件夹开启共享，但实测发现，当文件夹中的文件过大/过多的时候会失败（未知原因）
+Guest访问12345# Ubuntu 18.04sudo apt install cifs-utils# 用ip访问sudo mount.cifs //&lt;host_ip&gt;/d /path/to/mnt_destination -o user=&lt;Username&g...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/16</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2021/02/07/websitecollection/" >
             
                 <span>实用网站收集</span>
@@ -714,9 +745,24 @@ Tested with IDA pro 6.8 on Ubuntu 18.04 64bit.
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 18
+        Total : 19
         </div>
         <!-- search  -->
         
@@ -729,6 +775,11 @@ Tested with IDA pro 6.8 on Ubuntu 18.04 64bit.
     
     <div class="archive-year"> 2021 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/16</span><a class="archive-post-title" href= "/2021/08/16/hyper-share/" >Hyper-V挂载共享文件夹</a>
+        </li>
     
     
         <li class="archive-post-item">
