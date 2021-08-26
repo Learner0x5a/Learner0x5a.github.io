@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2021-08-16T09:42:11.714Z</updated>
+  <updated>2021-08-26T11:19:46.620Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>机器学习中分类问题的数据均衡</title>
+    <link href="https://learner0x5a.github.io/2021/08/26/data-balance/"/>
+    <id>https://learner0x5a.github.io/2021/08/26/data-balance/</id>
+    <published>2021-08-26T11:00:57.000Z</published>
+    <updated>2021-08-26T11:19:46.620Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题：真实世界的数据分布不一定均衡，那为什么大多数ML-DL要做数据均衡？"><a href="#问题：真实世界的数据分布不一定均衡，那为什么大多数ML-DL要做数据均衡？" class="headerlink" title="问题：真实世界的数据分布不一定均衡，那为什么大多数ML/DL要做数据均衡？"></a><strong>问题：真实世界的数据分布不一定均衡，那为什么大多数ML/DL要做数据均衡？</strong></h1><p>答案：根据场景来决定是否要数据均衡</p><h2 id="场景1-癌症二分类"><a href="#场景1-癌症二分类" class="headerlink" title="场景1: 癌症二分类"></a>场景1: 癌症二分类</h2><p>真实数据分布是：绝大多数人没有癌症，极少数人有癌症；如果不做数据均衡，那么一个ML分类器会倾向于把所有样本判断成没有癌症，即全是漏报，没有误报 <br>在辅助医生诊断时，显然是不行的：可以有误报，尽量没有漏报；<br>所以在训练模型时要做数据均衡。</p><h2 id="场景2-英文字母识别"><a href="#场景2-英文字母识别" class="headerlink" title="场景2: 英文字母识别"></a>场景2: 英文字母识别</h2><p>真实数据分布不是均匀分布，高频字母例如e，低频字母例如v；</p><p>如果做数据均衡，那么训练后的分类器对于每个字母分类错误的概率都是一样的； <br>如果不做数据均衡，那么训练后的分类器对于每个字母分类错误的概率不一样，错误概率的分布应该是接近字母的分布； <br>所以要根据场景做选择，例如做文本识别，高频字母识别准确率比低频字母准确率更重要，所以不能做数据增强。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>分类错误概率的分布和训练数据的分布具有一致性，所以要不要做数据增强，要由场景来决定。</p><h1 id="数据均衡方法"><a href="#数据均衡方法" class="headerlink" title="数据均衡方法"></a>数据均衡方法</h1><p>如果要做数据增均衡，可以从以下几个方面考虑：</p><ul><li>数据上采样/下采样</li><li>NN：Focal Loss</li><li>NN：二分类时，可以调整分类阈值</li><li>数据合成：SMOTE算法，利用小众样本在特征空间的相似性来合成新样本</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;问题：真实世界的数据分布不一定均衡，那为什么大多数ML-DL要做数据均衡？&quot;&gt;&lt;a href=&quot;#问题：真实世界的数据分布不一定均衡，那为什么大多数ML-DL要做数据均衡？&quot; class=&quot;headerlink&quot; title=&quot;问题：真实世界的数据分布不一定均衡，</summary>
+      
+    
+    
+    
+    
+    <category term="AI" scheme="https://learner0x5a.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>Hyper-V挂载共享文件夹</title>
