@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2021-08-27T13:01:14.193Z</updated>
+  <updated>2021-09-02T09:20:50.464Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL Note</title>
+    <link href="https://learner0x5a.github.io/2021/09/02/mysql/"/>
+    <id>https://learner0x5a.github.io/2021/09/02/mysql/</id>
+    <published>2021-09-02T09:09:24.000Z</published>
+    <updated>2021-09-02T09:20:50.464Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MySQL的迁移"><a href="#MySQL的迁移" class="headerlink" title="MySQL的迁移"></a>MySQL的迁移</h1><h2 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h2><p><code>.\mysqldump.exe -u root -p database_name table_name &gt; table_name.sql</code></p><p><code>.\mysqldump.exe -u root -p database_name table_name -r table_name.sql</code></p><h2 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h2><p><code>mysql -u root -p database_name &lt; table_name.sql</code></p><h2 id="场景：从windows迁移到ubuntu"><a href="#场景：从windows迁移到ubuntu" class="headerlink" title="场景：从windows迁移到ubuntu"></a>场景：从windows迁移到ubuntu</h2><p>一开始用powershell：</p><p><code>.\mysqldump.exe -u root -p database_name table_name &gt; table_name.sql</code></p><p>但是在ubuntu里导入的时候报错：</p><p><code>ERROR: ASCII &#39;\0&#39; appeared in the statement, but this is not allowed unless option --binary-mode ...</code></p><p>查了一下发现是powershell的原因：由于写出用的是重定向，而powershell的默认编码是UTF-16，导致ubuntu导入的时候不认识 <br>用<code>file</code>看一下，可以发现确实如此</p><p><code>Little-endian UTF-16 Unicode text, with very long lines, with CRLF line terminators.</code></p><p>解决方案是，不采用重定向写出：</p><p><code>.\mysqldump.exe -u root -p database_name table_name -r table_name.sql</code></p><p><code>file</code>的结果是：</p><p><code>ISO-8859 text, with very long lines</code>或者<code>ASCII text</code></p><p>然后导入：</p><p><code>mysql -u root -p database_name &lt; table_name.sql</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;MySQL的迁移&quot;&gt;&lt;a href=&quot;#MySQL的迁移&quot; class=&quot;headerlink&quot; title=&quot;MySQL的迁移&quot;&gt;&lt;/a&gt;MySQL的迁移&lt;/h1&gt;&lt;h2 id=&quot;导出&quot;&gt;&lt;a href=&quot;#导出&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    
+    <category term="database" scheme="https://learner0x5a.github.io/tags/database/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习中分类问题的数据均衡</title>
@@ -444,28 +466,6 @@
     
     
     <category term="others" scheme="https://learner0x5a.github.io/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://learner0x5a.github.io/2020/01/01/hello-world/"/>
-    <id>https://learner0x5a.github.io/2020/01/01/hello-world/</id>
-    <published>2019-12-31T16:00:00.000Z</published>
-    <updated>2021-01-06T09:15:41.114Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/zh-cn/docs/writing">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim _config.yml</span><br></pre></td></tr></table></figure><h3 id="Theme-Configuration"><a href="#Theme-Configuration" class="headerlink" title="Theme Configuration"></a>Theme Configuration</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim theme/archer/_config.yml</span><br></pre></td></tr></table></figure><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Update-website"><a href="#Update-website" class="headerlink" title="Update website"></a>Update website</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/zh-cn/docs/writing&quot;&gt;document</summary>
-      
-    
-    
-    
-    
-    <category term="Manual" scheme="https://learner0x5a.github.io/tags/Manual/"/>
     
   </entry>
   
