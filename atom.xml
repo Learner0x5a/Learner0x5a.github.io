@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2021-10-20T06:48:14.205Z</updated>
+  <updated>2021-10-21T10:37:00.940Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二进制代码相似性文献调研</title>
+    <link href="https://learner0x5a.github.io/2021/10/21/BinSim/"/>
+    <id>https://learner0x5a.github.io/2021/10/21/BinSim/</id>
+    <published>2021-10-21T07:07:40.000Z</published>
+    <updated>2021-10-21T10:37:00.940Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://kdocs.cn/l/csc2bETWuhN1">https://kdocs.cn/l/csc2bETWuhN1</a><br>[金山文档] binsim-survey.xlsx</p><p>TBD</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://kdocs.cn/l/csc2bETWuhN1&quot;&gt;https://kdocs.cn/l/csc2bETWuhN1&lt;/a&gt;&lt;br&gt;[金山文档] binsim-survey.xlsx&lt;/p&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="PaperReading" scheme="https://learner0x5a.github.io/tags/PaperReading/"/>
+    
+  </entry>
   
   <entry>
     <title>ElasticSearch (OpenSearch)</title>
@@ -443,28 +467,6 @@
     <category term="AI" scheme="https://learner0x5a.github.io/tags/AI/"/>
     
     <category term="C++" scheme="https://learner0x5a.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo-github 搭建网站</title>
-    <link href="https://learner0x5a.github.io/2020/12/14/hexo-github-%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"/>
-    <id>https://learner0x5a.github.io/2020/12/14/hexo-github-%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</id>
-    <published>2020-12-14T11:34:12.000Z</published>
-    <updated>2020-12-15T03:13:05.883Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="预备"><a href="#预备" class="headerlink" title="预备"></a>预备</h2><h3 id="安装git和nodejs"><a href="#安装git和nodejs" class="headerlink" title="安装git和nodejs"></a>安装git和nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install git nodejs npm</span><br></pre></td></tr></table></figure><h3 id="新建网站目录，例如test，安装hexo"><a href="#新建网站目录，例如test，安装hexo" class="headerlink" title="新建网站目录，例如test，安装hexo"></a>新建网站目录，例如test，安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir <span class="built_in">test</span>  </span><br><span class="line">sudo npm install -g hexo-cli  </span><br></pre></td></tr></table></figure><h2 id="搭建网站"><a href="#搭建网站" class="headerlink" title="搭建网站"></a>搭建网站</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init <span class="built_in">test</span>  </span><br><span class="line"><span class="built_in">cd</span> <span class="built_in">test</span>   </span><br><span class="line">npm install  </span><br><span class="line"><span class="comment"># test文件夹下_config.yml为网站配置文件  </span></span><br></pre></td></tr></table></figure><h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建一个名为 username.github.io的repo，username为github账户的用户名  </span></span><br><span class="line"><span class="comment"># 将这个repo的ssh链接填到_config.yml中，即修改deploy字段：  </span></span><br><span class="line"><span class="comment"># deploy:  </span></span><br><span class="line"><span class="comment">#   type: git  </span></span><br><span class="line"><span class="comment">#    repository: git@github.com:username/username.github.io.git  </span></span><br><span class="line"><span class="comment">#    branch: master  </span></span><br><span class="line"><span class="comment"># 然后  </span></span><br><span class="line">npm install hexo-deployer-git --save  </span><br></pre></td></tr></table></figure><h2 id="发布-更新网站"><a href="#发布-更新网站" class="headerlink" title="发布/更新网站"></a>发布/更新网站</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy  </span><br></pre></td></tr></table></figure><h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置<a href="https://hexo.io/themes/">主题</a></h2><p>我用了<a href="https://github.com/fi3ework/hexo-theme-archer">Archer</a>主题</p><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>在source/下新建images目录，在md中用Markdown语法引用，例如</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![鄂A0260W](/images/red_cross.jpg)  </span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;预备&quot;&gt;&lt;a href=&quot;#预备&quot; class=&quot;headerlink&quot; title=&quot;预备&quot;&gt;&lt;/a&gt;预备&lt;/h2&gt;&lt;h3 id=&quot;安装git和nodejs&quot;&gt;&lt;a href=&quot;#安装git和nodejs&quot; class=&quot;headerlink&quot; title=&quot;安</summary>
-      
-    
-    
-    
-    
-    <category term="Manual" scheme="https://learner0x5a.github.io/tags/Manual/"/>
     
   </entry>
   
