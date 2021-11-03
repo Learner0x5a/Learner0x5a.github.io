@@ -446,6 +446,40 @@ torch.nonzerotorch.nonzer...
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2021/11/03/huggingface/" >
+            
+                <span>Huggingface笔记</span>
+        </a>
+        <div class="abstract-content">
+            需求1: 自定义tokenizer官方文档给出了很好的说明。 但都是要训练的tokenizer，如果想要实现一个完全自定义的，需要参考这里。
+如果无法魔改，那么可以先用自己的方法分完词，用分好词之后的预料训练一个huggingface的WhiteSpace pretokenizer。
+需求2: 自定义mask需要修改DataCollatorForLanguageModeling类 源码的torch_mask_tokens方法，官方代码利用伯努利分布随机采样得到mask:
+123456789...probability_matrix.masked_fill_(special_tokens_...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/11/03</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2021/10/21/BinSim/" >
             
                 <span>二进制代码相似性文献调研</span>
@@ -653,40 +687,6 @@ Guest访问12345# Ubuntu 18.04sudo apt install cifs-utils# 用ip访问sudo mount
             <div class= abstract-tags >
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "BookReading">BookReading</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/02/07/websitecollection/" >
-            
-                <span>实用网站收集</span>
-        </a>
-        <div class="abstract-content">
-            翻译deepl
-IDAIDA Python wikiIDA Book
-社工密码撞库检查
-黑苹果黑果小兵
-杂项Compiler Explorer
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/02/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
     
 </div>
             
@@ -1170,9 +1170,24 @@ IDAIDA Python wikiIDA Book
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 23
+        Total : 24
         </div>
         <!-- search  -->
         
@@ -1185,6 +1200,11 @@ IDAIDA Python wikiIDA Book
     
     <div class="archive-year"> 2021 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/03</span><a class="archive-post-title" href= "/2021/11/03/huggingface/" >Huggingface笔记</a>
+        </li>
     
     
         <li class="archive-post-item">
