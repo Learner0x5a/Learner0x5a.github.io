@@ -362,8 +362,10 @@
         <div class="abstract-content">
             需求1: 自定义tokenizer官方文档给出了很好的说明。 但都是要训练的tokenizer，如果想要实现一个完全自定义的，需要参考这里。
 如果无法魔改，那么可以先用自己的方法分完词，用分好词之后的预料训练一个huggingface的WhiteSpace pretokenizer。
-需求2: 自定义mask需要修改DataCollatorForLanguageModeling类 源码的torch_mask_tokens方法，官方代码利用伯努利分布随机采样得到mask:
-123456789...probability_matrix.masked_fill_(special_tokens_...
+wsf：直接自己把token转成id，把id序列给bert即可。(这样不能用huggingface了)
+要用huggingface的话，传一个vocab_file给BertTokenizerFast。
+或者参考 # Loading from a JSON file
+12from transformers i...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
