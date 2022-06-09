@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2022-03-08T06:04:12.491Z</updated>
+  <updated>2022-06-09T13:51:32.311Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二进制代码相似性文献调研</title>
+    <link href="https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/"/>
+    <id>https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/</id>
+    <published>2022-06-09T13:48:40.000Z</published>
+    <updated>2022-06-09T13:51:32.311Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="给BERT添加额外的输入-特征-嵌入"><a href="#给BERT添加额外的输入-特征-嵌入" class="headerlink" title="给BERT添加额外的输入/特征/嵌入"></a>给BERT添加额外的输入/特征/嵌入</h1><p><a href="https://discuss.huggingface.co/t/can-we-add-extra-word-embedding-to-the-bert/14951">Can we add extra word embedding to the BERT?</a></p><p><a href="https://discuss.huggingface.co/t/how-to-use-additional-input-features-for-ner/4364/2">How to use additional input features for NER?</a></p><h1 id="相关讨论"><a href="#相关讨论" class="headerlink" title="相关讨论"></a>相关讨论</h1><p><a href="https://www.zhihu.com/question/470540809">BERT在输入层如何引入额外特征?</a></p><p><a href="https://www.zhihu.com/question/374835153">为什么Bert的三个Embedding可以进行相加?</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;给BERT添加额外的输入-特征-嵌入&quot;&gt;&lt;a href=&quot;#给BERT添加额外的输入-特征-嵌入&quot; class=&quot;headerlink&quot; title=&quot;给BERT添加额外的输入/特征/嵌入&quot;&gt;&lt;/a&gt;给BERT添加额外的输入/特征/嵌入&lt;/h1&gt;&lt;p&gt;&lt;a hre</summary>
+      
+    
+    
+    
+    
+    <category term="AI" scheme="https://learner0x5a.github.io/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HistoryOfChineseSociety</title>
+    <link href="https://learner0x5a.github.io/2022/04/01/HistoryOfChineseSociety/"/>
+    <id>https://learner0x5a.github.io/2022/04/01/HistoryOfChineseSociety/</id>
+    <published>2022-04-01T07:24:08.000Z</published>
+    <updated>2022-04-20T06:08:30.618Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="中国社会之史的分析（外一种：婚姻与家族）"><a href="#中国社会之史的分析（外一种：婚姻与家族）" class="headerlink" title="中国社会之史的分析（外一种：婚姻与家族）"></a>中国社会之史的分析（外一种：婚姻与家族）</h1><h2 id="成书背景：中国社会史论战"><a href="#成书背景：中国社会史论战" class="headerlink" title="成书背景：中国社会史论战"></a>成书背景：中国社会史论战</h2><p>本书是陶希圣在1928～1937年中国社会史论战中的著作。五四运动之后，马克思主义、唯物史观在中国迅速流行开来；</p><p>1927年，国共第一次合作破裂后，中共于1928年7月在莫斯科召开第六次全国代表大会，讨论解决中国社会的性质、中国共产党的革命性质、革命形势、革命任务等问题。</p><p>大会决议认为当时的中国社会性质是半殖民地半封建社会，中国革命的性质是资产阶级民主革命，根本任务是反帝反封建。</p><p>1928年10月，陶希圣发表《中国社会到底是什么社会》，被认为是中国社会史论战的起点，由此开始，中共、托派、国民党左派开始了关于中国社会史的论战。</p><p>虽然参与论战的各方人士政治立场各不相同甚至截然相反，但大都以马克思主义唯物史观作为理论依据；</p><p>社会史论战让历史学者强烈地感受到历史学并非单纯的书斋里的学问，而是与国家、民族、人民命运息息相关，并加深了对中国社会性质的认识。</p><p>论战并无结果，并于1937年抗日战争爆发后基本结束，而后则由历史的进程对此论战进行回顾和总结。</p><h2 id="阅读动机"><a href="#阅读动机" class="headerlink" title="阅读动机"></a>阅读动机</h2><p>最近经历的一些事情令我愈发感觉中国社会的混乱与复杂，对当下社会性质的认识十分模糊。</p><p>身边的很多人都是从县城来到到城市，了解他们的人生经历，令人感觉社会十分割裂。不同的地区似乎有完全不同的社会性质，组织形态；各地区的权力运行方式，社会规则也大不相同。</p><p>在县城里，依旧是宗法制，家长制；而城市里恰恰相反，年轻人通常反对宗法观点，争取更多的自主权。</p><p>令人担忧的是，县城的教育者，无论有意或无意，大多向下一代传达的的仍是礼大于法，即仍然是维护建设宗法制、家长制的社会的理念，而且通常和感情、道德揉杂在一起灌输，隐蔽且难以抗拒，如此发展，社会岂不是越发割裂？</p><p>由此引出，当下主流的社会性质是什么？为了推动社会的进步与发展，我们是否要打破旧的规则，建立新的秩序？如果是，采用何种方式？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;中国社会之史的分析（外一种：婚姻与家族）&quot;&gt;&lt;a href=&quot;#中国社会之史的分析（外一种：婚姻与家族）&quot; class=&quot;headerlink&quot; title=&quot;中国社会之史的分析（外一种：婚姻与家族）&quot;&gt;&lt;/a&gt;中国社会之史的分析（外一种：婚姻与家族）&lt;/h1&gt;&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="BookReading" scheme="https://learner0x5a.github.io/tags/BookReading/"/>
+    
+  </entry>
   
   <entry>
     <title>修复ubuntu16.04 Unity图形界面</title>
@@ -421,52 +465,6 @@
     
     
     <category term="others" scheme="https://learner0x5a.github.io/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>树莓派4b</title>
-    <link href="https://learner0x5a.github.io/2020/12/24/rpi/"/>
-    <id>https://learner0x5a.github.io/2020/12/24/rpi/</id>
-    <published>2020-12-24T12:16:39.000Z</published>
-    <updated>2021-01-06T09:15:42.276Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="树莓派4b折腾笔记"><a href="#树莓派4b折腾笔记" class="headerlink" title="树莓派4b折腾笔记"></a>树莓派4b折腾笔记</h1><h2 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h2><p>如果OS运行在TF卡上，一定要用高速TF卡，我选用的是SanDisk Extreme PRO 32 GB。</p><h2 id="装系统"><a href="#装系统" class="headerlink" title="装系统"></a><a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#2-prepare-the-sd-card">装系统</a></h2><p>装完系统先给LAN<a href="https://www.cnblogs.com/blueyunchao0618/p/11394640.html">配个静态ip</a></p><p>考虑到图形界面的开销很大，我装了一个Ubuntu server 20.04，TF卡镜像写完开机即用，无需安装系统。</p><p>同时由于没有图形界面，需要连Wifi的话：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ip link <span class="comment"># 查看各个网卡状态</span></span><br><span class="line">sudo iw dev wlan0 scan | grep SSID <span class="comment"># 扫描附近的SSID</span></span><br><span class="line">wpa_passphrase <span class="string">&quot;&lt;SSID&gt;&quot;</span> <span class="string">&quot;&lt;Password&gt;&quot;</span> <span class="comment"># 输出配置模板到stdout</span></span><br><span class="line">sudo vim /etc/wpa_supplicant/wpa_supplicant.conf <span class="comment"># 按上述模板配置WiFi</span></span><br><span class="line">sudo wpa_supplicant -B -D nl80211 -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf <span class="comment"># 连接Wi-Fi</span></span><br></pre></td></tr></table></figure><h2 id="软件源"><a href="#软件源" class="headerlink" title="软件源"></a>软件源</h2><p><code>uname -a</code>看一眼架构为<code>aarch64</code>属于arm64架构，选用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu-ports/">Ubuntu-ports源</a></p><h2 id="尝试作为服务器"><a href="#尝试作为服务器" class="headerlink" title="尝试作为服务器"></a>尝试作为服务器</h2><p>连接到华为随行wifi3之后，即使配了端口转发也无法连接。</p><p>查看wifi的wan口ip发现是个10.x.x.x的局域网ip，为什么？也许就是因为这个？</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;树莓派4b折腾笔记&quot;&gt;&lt;a href=&quot;#树莓派4b折腾笔记&quot; class=&quot;headerlink&quot; title=&quot;树莓派4b折腾笔记&quot;&gt;&lt;/a&gt;树莓派4b折腾笔记&lt;/h1&gt;&lt;h2 id=&quot;硬件&quot;&gt;&lt;a href=&quot;#硬件&quot; class=&quot;headerlink&quot; </summary>
-      
-    
-    
-    
-    
-    <category term="OS" scheme="https://learner0x5a.github.io/tags/OS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于源代码的机器学习</title>
-    <link href="https://learner0x5a.github.io/2020/12/14/MLonSrcCode/"/>
-    <id>https://learner0x5a.github.io/2020/12/14/MLonSrcCode/</id>
-    <published>2020-12-14T11:57:03.000Z</published>
-    <updated>2020-12-14T11:58:19.094Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="基于源代码的机器学习"><a href="#基于源代码的机器学习" class="headerlink" title="基于源代码的机器学习"></a>基于源代码的机器学习</h1><h2 id="ML4CODE"><a href="#ML4CODE" class="headerlink" title="ML4CODE"></a><a href="https://ml4code.github.io/">ML4CODE</a></h2><p>本领域主要关注三方面问题：</p><pre><code>  * 代码生成  * 代码表示  * 模式识别</code></pre><h2 id="CodRep"><a href="#CodRep" class="headerlink" title="CodRep"></a><a href="https://github.com/KTH/CodRep-competition">CodRep</a></h2><p>代码表示学习的比赛，给定源代码，要求修补源代码中的bug</p><h2 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h2><h3 id="程序生成"><a href="#程序生成" class="headerlink" title="程序生成"></a>程序生成</h3><p>Synthetic Datasets for Neural Program Synthesis, ICLR 2019<br>Execution-Guided Neural Program Synthesis, ICLR 2019<br>DeepFuzz: Automatic Generation of Syntax Valid C Programs for Fuzz Testing,<br>AAAI 2019<br>Towards Synthesizing Complex Programs from Input-Output Examples, ICLR 2018</p><h3 id="源代码分析及语言模型"><a href="#源代码分析及语言模型" class="headerlink" title="源代码分析及语言模型"></a>源代码分析及语言模型</h3><p>Generative Code Modeling with Graphs, ICLR 2019<br>NL2Type: Inferring JavaScript Function Types from Natural Language<br>Information, ICSE 2019<br>A Novel Neural Source Code Representation based on Abstract Syntax Tree, ICSE<br>2019<br>Deep Learning Type Inference, FSE 2018<br>Learning to Represent Programs with Graphs, ICLR 2018<br>Are Deep Neural Networks the Best Choice for Modeling Source Code?, FSE 2017</p><h3 id="神经网络结构与算法"><a href="#神经网络结构与算法" class="headerlink" title="神经网络结构与算法"></a>神经网络结构与算法</h3><p>Neural Code Comprehension: A Learnable Representation of Code Semantics,<br>NeurIPS 2018<br>A General Path-Based Representation for Predicting Program Properties, PLDI<br>2018<br>Cross-Language Learning for Program Classification using Bilateral Tree-Based<br>Convolutional Neural Networks, AAAI 2018</p><h3 id="嵌入"><a href="#嵌入" class="headerlink" title="嵌入"></a>嵌入</h3><p>A Literature Study of Embeddings on Source Code, arxiv<br>Deep Code Search, ICSE 2018<br>Code Vectors: Understanding Programs Through Embedded Abstracted Symbolic<br>Traces, FSE 2018</p><h3 id="程序翻译"><a href="#程序翻译" class="headerlink" title="程序翻译"></a>程序翻译</h3><p>Towards Neural Decompilation, arxiv<br>Tree-to-tree Neural Networks for Program Translation, ICLR 2018<br>Code Attention: Translating Code to Comments by Exploiting Domain Features,<br>arxiv</p><h3 id="代码补全"><a href="#代码补全" class="headerlink" title="代码补全"></a>代码补全</h3><p>Aroma: Code Recommendation via Structural Code Search, arxiv</p><h3 id="程序修复"><a href="#程序修复" class="headerlink" title="程序修复"></a>程序修复</h3><p>Maximal Divergence Sequential Autoencoder for Binary Software Vulnerability<br>Detection, ICLR 2019<br>Neural Program Repair by Jointly Learning to Localize and Repair, ICLR 2019<br>Dynamic Neural Program Embedding for Program Repair, ICLR 2018</p><h3 id="模式识别"><a href="#模式识别" class="headerlink" title="模式识别"></a>模式识别</h3><p>SAR: Learning Cross-Language API Mappings with Little Knowledge, FSE 2019<br>Hierarchical Learning of Cross-Language Mappings through Distributed Vector<br>Representations for Code, ICSE 2018<br>Deep API Learning, FSE 2016</p><h3 id="代码优化"><a href="#代码优化" class="headerlink" title="代码优化"></a>代码优化</h3><p>Neural Nets Can Learn Function Type Signatures From Binaries, USENIX 2017</p><h3 id="代码总结"><a href="#代码总结" class="headerlink" title="代码总结"></a>代码总结</h3><p>Summarizing Source Code with Transferred API Knowledge, IJCAI 2018<br>A Neural Framework for Retrieval and Summarization of Source Code, ASE 2018</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;基于源代码的机器学习&quot;&gt;&lt;a href=&quot;#基于源代码的机器学习&quot; class=&quot;headerlink&quot; title=&quot;基于源代码的机器学习&quot;&gt;&lt;/a&gt;基于源代码的机器学习&lt;/h1&gt;&lt;h2 id=&quot;ML4CODE&quot;&gt;&lt;a href=&quot;#ML4CODE&quot; class</summary>
-      
-    
-    
-    
-    
-    <category term="Security" scheme="https://learner0x5a.github.io/tags/Security/"/>
-    
-    <category term="AI" scheme="https://learner0x5a.github.io/tags/AI/"/>
     
   </entry>
   

@@ -20,17 +20,22 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Learner0x5a&#39;s Studio">
-<meta property="og:url" content="https://learner0x5a.github.io/archives/2021/page/2/index.html">
+    <meta name="description" content="给BERT添加额外的输入&#x2F;特征&#x2F;嵌入Can we add extra word embedding to the BERT? How to use additional input features for NER? 相关讨论BERT在输入层如何引入额外特征? 为什么Bert的三个Embedding可以进行相加?">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二进制代码相似性文献调研">
+<meta property="og:url" content="https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/index.html">
 <meta property="og:site_name" content="Learner0x5a&#39;s Studio">
+<meta property="og:description" content="给BERT添加额外的输入&#x2F;特征&#x2F;嵌入Can we add extra word embedding to the BERT? How to use additional input features for NER? 相关讨论BERT在输入层如何引入额外特征? 为什么Bert的三个Embedding可以进行相加?">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-06-09T13:48:40.000Z">
+<meta property="article:modified_time" content="2022-06-09T13:51:32.311Z">
 <meta property="article:author" content="Learner0x5a">
+<meta property="article:tag" content="AI">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>Learner0x5a&#39;s Studio</title>
+    <title>二进制代码相似性文献调研 · Learner0x5a&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -212,12 +217,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Learner0x5a&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">二进制代码相似性文献调研</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Learner0x5a's Studio.</a>
 </header>
@@ -229,24 +245,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            二进制代码相似性文献调研
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">60</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2022/06/09</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -347,269 +413,56 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/02/01/yxzg/" >
-            
-                <span>以孝治国：孝与家国伦理</span>
-        </a>
-        <div class="abstract-content">
-            夫孝者，善继人之志，善述人之志。 —— 《礼记·中庸》
-孝与孝道孝是子女对父母的自然亲情。殷商时代，孝是宗教性的。以崇拜，祭祀祖先为根本目的，祈求祖先神灵庇佑。
-孝道是被儒学家和统治者升华，外延，扭曲，推向极端的封建伦理道德。但在中国社会中二者并未截然分开。
-孝具有政治外延性。移孝为忠，报效国家和民族，不仅要孝敬老人，还要尊重长辈的意愿，实现长辈的愿望，为家族，乡里，国家争得荣誉。此即成为统治思想中的孝道。
-儒家的孝道为了维护父家长传统的等级制，孔子强调“孝悌”“亲亲尊尊”。孔子将孝作为人格修养的根本，外推到亲族，社会和国家政治。经由历代儒学家层层加码，孝演变成为治国的伦理工具。将社会政...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/02/01</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "BookReading">BookReading</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="给BERT添加额外的输入-特征-嵌入"><a href="#给BERT添加额外的输入-特征-嵌入" class="headerlink" title="给BERT添加额外的输入/特征/嵌入"></a>给BERT添加额外的输入/特征/嵌入</h1><p><a target="_blank" rel="noopener" href="https://discuss.huggingface.co/t/can-we-add-extra-word-embedding-to-the-bert/14951">Can we add extra word embedding to the BERT?</a></p>
+<p><a target="_blank" rel="noopener" href="https://discuss.huggingface.co/t/how-to-use-additional-input-features-for-ner/4364/2">How to use additional input features for NER?</a></p>
+<h1 id="相关讨论"><a href="#相关讨论" class="headerlink" title="相关讨论"></a>相关讨论</h1><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/470540809">BERT在输入层如何引入额外特征?</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/374835153">为什么Bert的三个Embedding可以进行相加?</a></p>
+
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/18/IDALinux/" >
-            
-                <span>IDA Linux 配置</span>
-        </a>
-        <div class="abstract-content">
-            IDA-Linux-ConfConfigure IDA pro linux version to support custom python/pip. 配置linux版IDA，支持自己的python/pip。
-Tested with IDA pro 6.8 on Ubuntu 18.04 64bit.
-32位环境配置；32bit enviroment123456dpkg --add-architecture i386apt updateapt dist-upgradeapt install gcc-multilib g++-multilib dialog apt-utilsapt ins...
+        <div class="license-wrapper">
+            <p>Author：<a href="https://learner0x5a.github.io">Learner0x5a</a>
+            <p>原文链接：<a href="https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/">https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/</a>
+            <p>发表日期：<a href="https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/">June 9th 2022, 9:48:40 pm</a>
+            <p>更新日期：<a href="https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/">June 9th 2022, 9:51:32 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/18</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Security">Security</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/11/Social-Dilemma/" >
-            
-                <span>监视资本主义:智能陷阱</span>
-        </a>
-        <div class="abstract-content">
-            网飞纪录片： Social Dilemma
-社交媒体的正反馈每次上/下拉刷新都是新东西。你不知道什么时候能刷到自己喜欢的东西，也不知道自己能刷到什么，就像老虎机一样。如今注意力经济中的这种劝服性设计在人脑中植入无意识的习惯，对人进行重编程。你的判断力，对自我价值和身份的认知都在被重新编程。在意别人的看法是必要的，但我们需要在意互联网上的10000个人的看法吗？我们真的需要每隔五分钟获得一次社交认可吗？我们通过获得的满足感来管理自己的生活，每次点赞、爱心、大拇指这些信号给我们短期积极的反馈。所以社交媒体将这些和价值融合，和真相融合，后果是显而易见的。而个人在一次次短期反馈之后，就会想“我接...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/11</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/11/HistoryOfWesternPoliticalThoughts/" >
-            
-                <span>西方政治思想史读书笔记</span>
-        </a>
-        <div class="abstract-content">
-            政治：众人之事人与政治不可能完全隔绝，公共政策会影响日常生活，政治体制改革会影响一代人的命运。
-以共和的视角来看，一个合格的公民应随时准备为政治世界的建设做贡献，由旁观者/思考者变为参与者。政治素养在实践中造就。
-古希腊：政治之始斯巴达立法家莱库古改革：
-1. 设立元老院
-
-2. 均分土地与奴隶
-
-3. 取消商品交换，采用供给制
-
-4. 优生优育
-
-5. ......
-想到了什么？
-雅典王政 -&gt; 贵族政治 -&gt; 僭主政治 -&gt; 民主政治 
-僭主：武力夺取权力，没有经过合法程序。
-伯里克利演说我们爱好美丽的东西，但是不至于奢侈；我们爱好智慧，但不至于优柔。
-财富是可以利...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/11</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "BookReading">BookReading</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/09/linuxBoot/" >
-            
-                <span>Linux 手动引导</span>
-        </a>
-        <div class="abstract-content">
-            服务器断电后重启，引导出错，需要手动引导进入系统。
-Linux启动流程
-BIOS程序
-GRUB引导
-内核引导
-调用虚拟文件系统initrd
-加载驱动
-加载真正的根文件系统
-执行/sbin/init
-系统初始化
-
-
-启动终端
-
-GRUB手动引导内核在grub shell中ls查看硬盘分区情况，常见的分区方案是，对于硬盘sdx，sdx1为boot分区(/boot)，sdx2为swap分区([SWAP])，sdx3为根分区(/)。
-逐个尝试ls (hdx, y)/boot/grub，找到根文件系统所在分区（通常y=gpt3），也可以ls (hdx, y)查看该分区下所有文件。
-如果手上有Liv...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/08/kms/" >
-            
-                <span>Win10激活-自建KMS服务器</span>
-        </a>
-        <div class="abstract-content">
-            KMS server - dockervlmcsd
-1234567git clone https://github.com/Wind4/vlmcsd-docker.git vlmcsdcd vlmcsd# Use docker-compose servicedocker-compose up -d# or docker build image# docker build -t vlmcsd .# docker run -idt -p 1688:1688 vlmcsd
-
-
-KMS client - Windows 10
-管理员权限运行cmd，卸载之前的key：
-1slmgr.vbs -up...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/06/restore/" >
-            
-                <span>本地文件丢失，如何恢复hexo博客</span>
-        </a>
-        <div class="abstract-content">
-            恢复hexo重新inithexo之前push到git上的只有生成的html/图片，没有md文件。
-如何恢复？
-1pip3 install html2text
-
-把html转为文本，再手动重建md。
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/06</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
-    
-</div>
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2022/04/01/HistoryOfChineseSociety/" title= "HistoryOfChineseSociety">
+                    <div class="prevTitle">HistoryOfChineseSociety</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-    <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2021/">&lt; PREV</a><a class="page-number" href="/archives/2021/">1</a><span class="page-number current">2</span>
-    </nav>
     
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -691,6 +544,24 @@ KMS client - Windows 10
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%99BERT%E6%B7%BB%E5%8A%A0%E9%A2%9D%E5%A4%96%E7%9A%84%E8%BE%93%E5%85%A5-%E7%89%B9%E5%BE%81-%E5%B5%8C%E5%85%A5"><span class="toc-number">1.</span> <span class="toc-text">给BERT添加额外的输入&#x2F;特征&#x2F;嵌入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E8%AE%A8%E8%AE%BA"><span class="toc-number">2.</span> <span class="toc-text">相关讨论</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1300,6 +1171,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
