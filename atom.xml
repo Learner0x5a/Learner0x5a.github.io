@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2022-06-09T13:51:32.311Z</updated>
+  <updated>2022-06-09T14:01:32.391Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>二进制代码相似性文献调研</title>
+    <title>给BERT添加额外的输入/特征/嵌入</title>
     <link href="https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/"/>
     <id>https://learner0x5a.github.io/2022/06/09/AddtionalBertEmebdding/</id>
     <published>2022-06-09T13:48:40.000Z</published>
-    <updated>2022-06-09T13:51:32.311Z</updated>
+    <updated>2022-06-09T14:01:32.391Z</updated>
     
     <content type="html"><![CDATA[<h1 id="给BERT添加额外的输入-特征-嵌入"><a href="#给BERT添加额外的输入-特征-嵌入" class="headerlink" title="给BERT添加额外的输入/特征/嵌入"></a>给BERT添加额外的输入/特征/嵌入</h1><p><a href="https://discuss.huggingface.co/t/can-we-add-extra-word-embedding-to-the-bert/14951">Can we add extra word embedding to the BERT?</a></p><p><a href="https://discuss.huggingface.co/t/how-to-use-additional-input-features-for-ner/4364/2">How to use additional input features for NER?</a></p><h1 id="相关讨论"><a href="#相关讨论" class="headerlink" title="相关讨论"></a>相关讨论</h1><p><a href="https://www.zhihu.com/question/470540809">BERT在输入层如何引入额外特征?</a></p><p><a href="https://www.zhihu.com/question/374835153">为什么Bert的三个Embedding可以进行相加?</a></p>]]></content>
     
