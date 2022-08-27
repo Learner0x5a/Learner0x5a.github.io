@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2022-08-27T16:07:35.986Z</updated>
+  <updated>2022-08-27T16:22:16.180Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://learner0x5a.github.io/2022/08/28/binaryninja-linux/"/>
     <id>https://learner0x5a.github.io/2022/08/28/binaryninja-linux/</id>
     <published>2022-08-27T16:04:32.000Z</published>
-    <updated>2022-08-27T16:07:35.986Z</updated>
+    <updated>2022-08-27T16:22:16.180Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="BinaryNinja-Linux安装"><a href="#BinaryNinja-Linux安装" class="headerlink" title="BinaryNinja Linux安装"></a>BinaryNinja Linux安装</h1><p>在一个没有图形界面的Linux里，如果直接按照官方文档的说明安装python api，在调用时会报错“License not valid”。</p><p>解决方案：把license文件放到<code>~/.binaryninja/</code>目录下，且命名为<code>license.dat</code>。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="BinaryNinja-Linux安装"><a href="#BinaryNinja-Linux安装" class="headerlink" title="BinaryNinja Linux安装"></a>BinaryNinja Linux安装</h1><p>在一个没有图形界面的Linux里，如果直接按照官方文档的说明安装python api，在调用时会报错“License not valid”。</p><p>解决方案：把license文件放到<code>~/.binaryninja/</code>目录下，且命名为<code>license.dat</code>。</p><p>Note: 需要<code>apt install libdbus-1-3 libgel1</code></p>]]></content>
     
     
       
