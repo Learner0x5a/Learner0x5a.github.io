@@ -355,6 +355,69 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2021/08/16/hyper-share/" >
+            
+                <span>Hyper-V挂载共享文件夹</span>
+        </a>
+        <div class="abstract-content">
+            Windows Host + Ubuntu GuestHost配置在资源管理器中的磁盘，例如D:\上右键-属性-共享-高级共享-勾选共享此文件夹，记一下网络路径，比如Desktop-jpjdlkr\d
+其实可以对磁盘中具体的某个文件夹开启共享，但实测发现，当文件夹中的文件过大/过多的时候会失败（未知原因）
+Guest访问12345# Ubuntu 18.04sudo apt install cifs-utils# 用ip访问sudo mount.cifs //&lt;host_ip&gt;/d /path/to/mnt_destination -o user=&lt;Username&g...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/16</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2021/06/25/magisk/" >
+            
+                <span>小米6搞机:BootLoader+Root+Magisk</span>
+        </a>
+        <div class="abstract-content">
+            解锁+Root去官网申请解锁bootloader下载解锁工具（注意，解锁工具需要登录，先登录再进fastboot！）刷机，由于我之前申请了MIUI12的内测，需要降级回MIUI10开发版，即官网给出的小米6最高的开发版为了获取完全root权限，可以修改system分区，使用adb解锁system需要打开开发者选项中的USB调试，USB安装，USB调试(安全设置)，关闭“启用MIUI优化”。 
+12adb.exe rootadb.exe disable-verity
+如果需要用adb传文件可以使用adb push file_on_pc dir_on_phone命令例如
+123.\adb.e...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/06/25</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2021/05/27/web-dev/" >
             
                 <span>HTML, CSS 和 JavaScript</span>
@@ -619,75 +682,6 @@ GRUB手动引导内核在grub shell中ls查看硬盘分区情况，常见的分�
             <!-- date  -->
             <div class="abstract-date">
                 <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/08/kms/" >
-            
-                <span>Win10激活-自建KMS服务器</span>
-        </a>
-        <div class="abstract-content">
-            KMS server - dockervlmcsd
-1234567git clone https://github.com/Wind4/vlmcsd-docker.git vlmcsdcd vlmcsd# Use docker-compose servicedocker-compose up -d# or docker build image# docker build -t vlmcsd .# docker run -idt -p 1688:1688 vlmcsd
-
-
-KMS client - Windows 10
-管理员权限运行cmd，卸载之前的key：
-1slmgr.vbs -up...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/06/restore/" >
-            
-                <span>本地文件丢失，如何恢复hexo博客</span>
-        </a>
-        <div class="abstract-content">
-            恢复hexo重新inithexo之前push到git上的只有生成的html/图片，没有md文件。
-如何恢复？
-1pip3 install html2text
-
-把html转为文本，再手动重建md。
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/06</span>
             </div>
             <!-- tags  -->
             
@@ -1137,9 +1131,39 @@ KMS client - Windows 10
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 27
+        Total : 29
         </div>
         <!-- search  -->
         
@@ -1152,6 +1176,16 @@ KMS client - Windows 10
     
     <div class="archive-year"> 2022 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2022/08/28/binaryninja-linux/" >binaryninja-linux</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2022/08/27/VSCodeIssues/" >vscode 有关bug</a>
+        </li>
     
     
         <li class="archive-post-item">

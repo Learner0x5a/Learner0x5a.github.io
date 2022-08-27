@@ -368,6 +368,71 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2021/09/02/mysql/" >
+            
+                <span>MySQL Note</span>
+        </a>
+        <div class="abstract-content">
+            MySQL的迁移导出.\mysqldump.exe -u root -p database_name table_name &gt; table_name.sql
+.\mysqldump.exe -u root -p database_name table_name -r table_name.sql
+导入mysql -u root -p database_name &lt; table_name.sql
+场景：从windows迁移到ubuntu一开始用powershell：
+.\mysqldump.exe -u root -p database_name table_name &gt;...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/09/02</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "database">database</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2021/08/26/data-balance/" >
+            
+                <span>机器学习中分类问题的数据均衡</span>
+        </a>
+        <div class="abstract-content">
+            问题：真实世界的数据分布不一定均衡，那为什么大多数ML/DL要做数据均衡？答案：根据场景来决定是否要数据均衡
+场景1: 癌症二分类真实数据分布是：绝大多数人没有癌症，极少数人有癌症；如果不做数据均衡，那么一个ML分类器会倾向于把所有样本判断成没有癌症，即全是漏报，没有误报 在辅助医生诊断时，显然是不行的：可以有误报，尽量没有漏报；所以在训练模型时要做数据均衡。
+场景2: 英文字母识别真实数据分布不是均匀分布，高频字母例如e，低频字母例如v；
+如果做数据均衡，那么训练后的分类器对于每个字母分类错误的概率都是一样的； 如果不做数据均衡，那么训练后的分类器对于每个字母分类错误的概率不一样，错误...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/26</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2021/08/16/hyper-share/" >
             
                 <span>Hyper-V挂载共享文件夹</span>
@@ -617,75 +682,6 @@ GRUB手动引导内核在grub shell中ls查看硬盘分区情况，常见的分�
             <!-- date  -->
             <div class="abstract-date">
                 <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/08/kms/" >
-            
-                <span>Win10激活-自建KMS服务器</span>
-        </a>
-        <div class="abstract-content">
-            KMS server - dockervlmcsd
-1234567git clone https://github.com/Wind4/vlmcsd-docker.git vlmcsdcd vlmcsd# Use docker-compose servicedocker-compose up -d# or docker build image# docker build -t vlmcsd .# docker run -idt -p 1688:1688 vlmcsd
-
-
-KMS client - Windows 10
-管理员权限运行cmd，卸载之前的key：
-1slmgr.vbs -up...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/06/restore/" >
-            
-                <span>本地文件丢失，如何恢复hexo博客</span>
-        </a>
-        <div class="abstract-content">
-            恢复hexo重新inithexo之前push到git上的只有生成的html/图片，没有md文件。
-如何恢复？
-1pip3 install html2text
-
-把html转为文本，再手动重建md。
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/06</span>
             </div>
             <!-- tags  -->
             
@@ -1235,9 +1231,39 @@ KMS client - Windows 10
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 27
+        Total : 29
         </div>
         <!-- search  -->
         
@@ -1250,6 +1276,16 @@ KMS client - Windows 10
     
     <div class="archive-year"> 2022 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2022/08/28/binaryninja-linux/" >binaryninja-linux</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2022/08/27/VSCodeIssues/" >vscode 有关bug</a>
+        </li>
     
     
         <li class="archive-post-item">

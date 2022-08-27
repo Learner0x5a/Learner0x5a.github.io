@@ -20,17 +20,22 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Learner0x5a&#39;s Studio">
-<meta property="og:url" content="https://learner0x5a.github.io/tags/C/index.html">
+    <meta name="description" content="1. Python调试器不起效按F5，或者通过菜单启动调试，均无反应。 解决方案：降级python插件。在应用商店的插件页面，已安装的插件的“卸载”按钮旁边的箭头，下拉菜单中选择其他版本安装，降级至2021年的最后一个版本。 2. remote ssh一直超时除了网络原因之外，如果目标服务器ip不变但ssh key变了，也会出现这种情况。 解决方案：删掉known_hosts里面的目标服务器条目；">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode 有关bug">
+<meta property="og:url" content="https://learner0x5a.github.io/2022/08/27/VSCodeIssues/index.html">
 <meta property="og:site_name" content="Learner0x5a&#39;s Studio">
+<meta property="og:description" content="1. Python调试器不起效按F5，或者通过菜单启动调试，均无反应。 解决方案：降级python插件。在应用商店的插件页面，已安装的插件的“卸载”按钮旁边的箭头，下拉菜单中选择其他版本安装，降级至2021年的最后一个版本。 2. remote ssh一直超时除了网络原因之外，如果目标服务器ip不变但ssh key变了，也会出现这种情况。 解决方案：删掉known_hosts里面的目标服务器条目；">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-08-27T15:56:03.000Z">
+<meta property="article:modified_time" content="2022-08-27T16:08:16.932Z">
 <meta property="article:author" content="Learner0x5a">
+<meta property="article:tag" content="Tools">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>Learner0x5a&#39;s Studio</title>
+    <title>vscode 有关bug · Learner0x5a&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -212,12 +217,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Learner0x5a&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">vscode 有关bug</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Learner0x5a's Studio.</a>
 </header>
@@ -229,24 +245,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            vscode 有关bug
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">156</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2022/08/27</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -347,43 +413,61 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/12/14/%E5%9F%BA%E4%BA%8E%E9%85%B7Q%E5%BC%80%E5%8F%91%E7%9A%84QQ%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/" >
-            
-                <span>基于酷Q开发的QQ聊天机器人</span>
-        </a>
-        <div class="abstract-content">
-            基于酷Q开发的QQ聊天机器人接入腾讯AI开放平台需要计算资源较好以及网络条件较好，不然延迟太大，不能支持高频率聊天或者高并发聊天。
-安装酷Q酷Q机器人是一款比较成熟的QQ机器人，建议开一个QQ小号玩~安装完直接打开，登录小号，配置应用，可以先走一遍互动式教程，非常容易上手。酷Q的图灵机器人需要另外申请，最可恨的是实名制之后每天也就100次的调用次数（即聊天回复累积多于100条时就GG），限制太死。
-插件开发： C++ SDKC++ SDK的配置首先下载/克隆项目，安装Visual Studio 2019直接用VS 2019打开 awesome-bot 文件夹，VS 将会自动进行 CMak...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/12/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "C++">C++</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="1-Python调试器不起效"><a href="#1-Python调试器不起效" class="headerlink" title="1. Python调试器不起效"></a>1. Python调试器不起效</h1><p>按F5，或者通过菜单启动调试，均无反应。</p>
+<p>解决方案：降级python插件。在应用商店的插件页面，已安装的插件的“卸载”按钮旁边的箭头，下拉菜单中选择其他版本安装，降级至2021年的最后一个版本。</p>
+<h1 id="2-remote-ssh一直超时"><a href="#2-remote-ssh一直超时" class="headerlink" title="2. remote ssh一直超时"></a>2. remote ssh一直超时</h1><p>除了网络原因之外，如果目标服务器ip不变但ssh key变了，也会出现这种情况。</p>
+<p>解决方案：删掉known_hosts里面的目标服务器条目；然后在vscode <code>Remote-SSH:Settings</code> (Ctrl-Shift-P) 里面，取消勾选<code>Use Local Server</code>。</p>
+
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>Author：<a href="https://learner0x5a.github.io">Learner0x5a</a>
+            <p>原文链接：<a href="https://learner0x5a.github.io/2022/08/27/VSCodeIssues/">https://learner0x5a.github.io/2022/08/27/VSCodeIssues/</a>
+            <p>发表日期：<a href="https://learner0x5a.github.io/2022/08/27/VSCodeIssues/">August 27th 2022, 11:56:03 pm</a>
+            <p>更新日期：<a href="https://learner0x5a.github.io/2022/08/27/VSCodeIssues/">August 28th 2022, 12:08:16 am</a>
+            <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2022/08/28/binaryninja-linux/" title= "binaryninja-linux">
+                    <div class="nextTitle">binaryninja-linux</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2022/06/09/AddtionalBertEmebdding/" title= "给BERT添加额外的输入/特征/嵌入">
+                    <div class="prevTitle">给BERT添加额外的输入/特征/嵌入</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -465,6 +549,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Python%E8%B0%83%E8%AF%95%E5%99%A8%E4%B8%8D%E8%B5%B7%E6%95%88"><span class="toc-number">1.</span> <span class="toc-text">1. Python调试器不起效</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-remote-ssh%E4%B8%80%E7%9B%B4%E8%B6%85%E6%97%B6"><span class="toc-number">2.</span> <span class="toc-text">2. remote ssh一直超时</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1114,6 +1216,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>

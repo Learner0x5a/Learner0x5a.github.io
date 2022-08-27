@@ -446,6 +446,70 @@ torch.nonzerotorch.nonzer...
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2022/08/28/binaryninja-linux/" >
+            
+                <span>binaryninja-linux</span>
+        </a>
+        <div class="abstract-content">
+            BinaryNinja Linux安装在一个没有图形界面的Linux里，如果直接按照官方文档的说明安装python api，在调用时会报错“License not valid”。
+解决方案：把license文件放到~/.binaryninja/目录下，且命名为license.dat。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/08/28</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2022/08/27/VSCodeIssues/" >
+            
+                <span>vscode 有关bug</span>
+        </a>
+        <div class="abstract-content">
+            1. Python调试器不起效按F5，或者通过菜单启动调试，均无反应。
+解决方案：降级python插件。在应用商店的插件页面，已安装的插件的“卸载”按钮旁边的箭头，下拉菜单中选择其他版本安装，降级至2021年的最后一个版本。
+2. remote ssh一直超时除了网络原因之外，如果目标服务器ip不变但ssh key变了，也会出现这种情况。
+解决方案：删掉known_hosts里面的目标服务器条目；然后在vscode Remote-SSH:Settings (Ctrl-Shift-P) 里面，取消勾选Use Local Server。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/08/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2022/06/09/AddtionalBertEmebdding/" >
             
                 <span>给BERT添加额外的输入/特征/嵌入</span>
@@ -628,71 +692,6 @@ TBD
             <div class= abstract-tags >
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/09/02/mysql/" >
-            
-                <span>MySQL Note</span>
-        </a>
-        <div class="abstract-content">
-            MySQL的迁移导出.\mysqldump.exe -u root -p database_name table_name &gt; table_name.sql
-.\mysqldump.exe -u root -p database_name table_name -r table_name.sql
-导入mysql -u root -p database_name &lt; table_name.sql
-场景：从windows迁移到ubuntu一开始用powershell：
-.\mysqldump.exe -u root -p database_name table_name &gt;...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/09/02</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "database">database</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/08/26/data-balance/" >
-            
-                <span>机器学习中分类问题的数据均衡</span>
-        </a>
-        <div class="abstract-content">
-            问题：真实世界的数据分布不一定均衡，那为什么大多数ML/DL要做数据均衡？答案：根据场景来决定是否要数据均衡
-场景1: 癌症二分类真实数据分布是：绝大多数人没有癌症，极少数人有癌症；如果不做数据均衡，那么一个ML分类器会倾向于把所有样本判断成没有癌症，即全是漏报，没有误报 在辅助医生诊断时，显然是不行的：可以有误报，尽量没有漏报；所以在训练模型时要做数据均衡。
-场景2: 英文字母识别真实数据分布不是均匀分布，高频字母例如e，低频字母例如v；
-如果做数据均衡，那么训练后的分类器对于每个字母分类错误的概率都是一样的； 如果不做数据均衡，那么训练后的分类器对于每个字母分类错误的概率不一样，错误...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/26</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
     
 </div>
             
@@ -1236,9 +1235,39 @@ TBD
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 27
+        Total : 29
         </div>
         <!-- search  -->
         
@@ -1251,6 +1280,16 @@ TBD
     
     <div class="archive-year"> 2022 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2022/08/28/binaryninja-linux/" >binaryninja-linux</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2022/08/27/VSCodeIssues/" >vscode 有关bug</a>
+        </li>
     
     
         <li class="archive-post-item">

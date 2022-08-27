@@ -355,6 +355,70 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2022/08/28/binaryninja-linux/" >
+            
+                <span>binaryninja-linux</span>
+        </a>
+        <div class="abstract-content">
+            BinaryNinja Linux安装在一个没有图形界面的Linux里，如果直接按照官方文档的说明安装python api，在调用时会报错“License not valid”。
+解决方案：把license文件放到~/.binaryninja/目录下，且命名为license.dat。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/08/28</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2022/08/27/VSCodeIssues/" >
+            
+                <span>vscode 有关bug</span>
+        </a>
+        <div class="abstract-content">
+            1. Python调试器不起效按F5，或者通过菜单启动调试，均无反应。
+解决方案：降级python插件。在应用商店的插件页面，已安装的插件的“卸载”按钮旁边的箭头，下拉菜单中选择其他版本安装，降级至2021年的最后一个版本。
+2. remote ssh一直超时除了网络原因之外，如果目标服务器ip不变但ssh key变了，也会出现这种情况。
+解决方案：删掉known_hosts里面的目标服务器条目；然后在vscode Remote-SSH:Settings (Ctrl-Shift-P) 里面，取消勾选Use Local Server。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/08/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2022/06/09/AddtionalBertEmebdding/" >
             
                 <span>给BERT添加额外的输入/特征/嵌入</span>
@@ -602,69 +666,6 @@ TBD
             <div class= abstract-tags >
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/08/16/hyper-share/" >
-            
-                <span>Hyper-V挂载共享文件夹</span>
-        </a>
-        <div class="abstract-content">
-            Windows Host + Ubuntu GuestHost配置在资源管理器中的磁盘，例如D:\上右键-属性-共享-高级共享-勾选共享此文件夹，记一下网络路径，比如Desktop-jpjdlkr\d
-其实可以对磁盘中具体的某个文件夹开启共享，但实测发现，当文件夹中的文件过大/过多的时候会失败（未知原因）
-Guest访问12345# Ubuntu 18.04sudo apt install cifs-utils# 用ip访问sudo mount.cifs //&lt;host_ip&gt;/d /path/to/mnt_destination -o user=&lt;Username&g...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/16</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/06/25/magisk/" >
-            
-                <span>小米6搞机:BootLoader+Root+Magisk</span>
-        </a>
-        <div class="abstract-content">
-            解锁+Root去官网申请解锁bootloader下载解锁工具（注意，解锁工具需要登录，先登录再进fastboot！）刷机，由于我之前申请了MIUI12的内测，需要降级回MIUI10开发版，即官网给出的小米6最高的开发版为了获取完全root权限，可以修改system分区，使用adb解锁system需要打开开发者选项中的USB调试，USB安装，USB调试(安全设置)，关闭“启用MIUI优化”。 
-12adb.exe rootadb.exe disable-verity
-如果需要用adb传文件可以使用adb push file_on_pc dir_on_phone命令例如
-123.\adb.e...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/06/25</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
     
 </div>
             
@@ -1108,9 +1109,39 @@ Guest访问12345# Ubuntu 18.04sudo apt install cifs-utils# 用ip访问sudo mount
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 27
+        Total : 29
         </div>
         <!-- search  -->
         
@@ -1123,6 +1154,16 @@ Guest访问12345# Ubuntu 18.04sudo apt install cifs-utils# 用ip访问sudo mount
     
     <div class="archive-year"> 2022 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2022/08/28/binaryninja-linux/" >binaryninja-linux</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2022/08/27/VSCodeIssues/" >vscode 有关bug</a>
+        </li>
     
     
         <li class="archive-post-item">

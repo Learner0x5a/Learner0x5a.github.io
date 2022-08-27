@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Learner0x5a&#39;s Studio">
-<meta property="og:url" content="https://learner0x5a.github.io/tags/C/index.html">
+<meta property="og:url" content="https://learner0x5a.github.io/archives/2022/08/index.html">
 <meta property="og:site_name" content="Learner0x5a&#39;s Studio">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Learner0x5a">
@@ -355,27 +355,58 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/12/14/%E5%9F%BA%E4%BA%8E%E9%85%B7Q%E5%BC%80%E5%8F%91%E7%9A%84QQ%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/" >
+        <a class="abstract-title" href = "/2022/08/28/binaryninja-linux/" >
             
-                <span>基于酷Q开发的QQ聊天机器人</span>
+                <span>binaryninja-linux</span>
         </a>
         <div class="abstract-content">
-            基于酷Q开发的QQ聊天机器人接入腾讯AI开放平台需要计算资源较好以及网络条件较好，不然延迟太大，不能支持高频率聊天或者高并发聊天。
-安装酷Q酷Q机器人是一款比较成熟的QQ机器人，建议开一个QQ小号玩~安装完直接打开，登录小号，配置应用，可以先走一遍互动式教程，非常容易上手。酷Q的图灵机器人需要另外申请，最可恨的是实名制之后每天也就100次的调用次数（即聊天回复累积多于100条时就GG），限制太死。
-插件开发： C++ SDKC++ SDK的配置首先下载/克隆项目，安装Visual Studio 2019直接用VS 2019打开 awesome-bot 文件夹，VS 将会自动进行 CMak...
+            BinaryNinja Linux安装在一个没有图形界面的Linux里，如果直接按照官方文档的说明安装python api，在调用时会报错“License not valid”。
+解决方案：把license文件放到~/.binaryninja/目录下，且命名为license.dat。
+
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/12/14</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/08/28</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "C++">C++</a>
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2022/08/27/VSCodeIssues/" >
+            
+                <span>vscode 有关bug</span>
+        </a>
+        <div class="abstract-content">
+            1. Python调试器不起效按F5，或者通过菜单启动调试，均无反应。
+解决方案：降级python插件。在应用商店的插件页面，已安装的插件的“卸载”按钮旁边的箭头，下拉菜单中选择其他版本安装，降级至2021年的最后一个版本。
+2. remote ssh一直超时除了网络原因之外，如果目标服务器ip不变但ssh key变了，也会出现这种情况。
+解决方案：删掉known_hosts里面的目标服务器条目；然后在vscode Remote-SSH:Settings (Ctrl-Shift-P) 里面，取消勾选Use Local Server。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/08/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
     
 </div>
             

@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2022-06-09T14:01:32.391Z</updated>
+  <updated>2022-08-27T16:07:35.986Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>binaryninja-linux</title>
+    <link href="https://learner0x5a.github.io/2022/08/28/binaryninja-linux/"/>
+    <id>https://learner0x5a.github.io/2022/08/28/binaryninja-linux/</id>
+    <published>2022-08-27T16:04:32.000Z</published>
+    <updated>2022-08-27T16:07:35.986Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="BinaryNinja-Linux安装"><a href="#BinaryNinja-Linux安装" class="headerlink" title="BinaryNinja Linux安装"></a>BinaryNinja Linux安装</h1><p>在一个没有图形界面的Linux里，如果直接按照官方文档的说明安装python api，在调用时会报错“License not valid”。</p><p>解决方案：把license文件放到<code>~/.binaryninja/</code>目录下，且命名为<code>license.dat</code>。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;BinaryNinja-Linux安装&quot;&gt;&lt;a href=&quot;#BinaryNinja-Linux安装&quot; class=&quot;headerlink&quot; title=&quot;BinaryNinja Linux安装&quot;&gt;&lt;/a&gt;BinaryNinja Linux安装&lt;/h1&gt;&lt;p&gt;在一</summary>
+      
+    
+    
+    
+    
+    <category term="Tools" scheme="https://learner0x5a.github.io/tags/Tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode 有关bug</title>
+    <link href="https://learner0x5a.github.io/2022/08/27/VSCodeIssues/"/>
+    <id>https://learner0x5a.github.io/2022/08/27/VSCodeIssues/</id>
+    <published>2022-08-27T15:56:03.000Z</published>
+    <updated>2022-08-27T16:08:16.932Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-Python调试器不起效"><a href="#1-Python调试器不起效" class="headerlink" title="1. Python调试器不起效"></a>1. Python调试器不起效</h1><p>按F5，或者通过菜单启动调试，均无反应。</p><p>解决方案：降级python插件。在应用商店的插件页面，已安装的插件的“卸载”按钮旁边的箭头，下拉菜单中选择其他版本安装，降级至2021年的最后一个版本。</p><h1 id="2-remote-ssh一直超时"><a href="#2-remote-ssh一直超时" class="headerlink" title="2. remote ssh一直超时"></a>2. remote ssh一直超时</h1><p>除了网络原因之外，如果目标服务器ip不变但ssh key变了，也会出现这种情况。</p><p>解决方案：删掉known_hosts里面的目标服务器条目；然后在vscode <code>Remote-SSH:Settings</code> (Ctrl-Shift-P) 里面，取消勾选<code>Use Local Server</code>。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-Python调试器不起效&quot;&gt;&lt;a href=&quot;#1-Python调试器不起效&quot; class=&quot;headerlink&quot; title=&quot;1. Python调试器不起效&quot;&gt;&lt;/a&gt;1. Python调试器不起效&lt;/h1&gt;&lt;p&gt;按F5，或者通过菜单启动调试，均无反应。</summary>
+      
+    
+    
+    
+    
+    <category term="Tools" scheme="https://learner0x5a.github.io/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>给BERT添加额外的输入/特征/嵌入</title>
@@ -415,50 +459,6 @@
     <summary type="html">&lt;p&gt;服务器断电后重启，引导出错，需要手动引导进入系统。&lt;/p&gt;
 &lt;h1 id=&quot;Linux启动流程&quot;&gt;&lt;a href=&quot;#Linux启动流程&quot; class=&quot;headerlink&quot; title=&quot;Linux启动流程&quot;&gt;&lt;/a&gt;Linux启动流程&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;BIO</summary>
-      
-    
-    
-    
-    
-    <category term="others" scheme="https://learner0x5a.github.io/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Win10激活-自建KMS服务器</title>
-    <link href="https://learner0x5a.github.io/2021/01/08/kms/"/>
-    <id>https://learner0x5a.github.io/2021/01/08/kms/</id>
-    <published>2021-01-08T07:59:30.000Z</published>
-    <updated>2021-01-08T08:18:44.377Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="KMS-server-docker"><a href="#KMS-server-docker" class="headerlink" title="KMS server - docker"></a>KMS server - docker</h1><p><a href="https://github.com/Wind4/vlmcsd-docker">vlmcsd</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/Wind4/vlmcsd-docker.git vlmcsd</span><br><span class="line"><span class="built_in">cd</span> vlmcsd</span><br><span class="line"><span class="comment"># Use docker-compose service</span></span><br><span class="line">docker-compose up -d</span><br><span class="line"><span class="comment"># or docker build image</span></span><br><span class="line"><span class="comment"># docker build -t vlmcsd .</span></span><br><span class="line"><span class="comment"># docker run -idt -p 1688:1688 vlmcsd</span></span><br></pre></td></tr></table></figure><h1 id="KMS-client-Windows-10"><a href="#KMS-client-Windows-10" class="headerlink" title="KMS client - Windows 10"></a>KMS client - Windows 10</h1><ol><li><p>管理员权限运行cmd，卸载之前的key：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">slmgr.vbs -upk</span><br></pre></td></tr></table></figure></li><li><p>安装kms客户端key（去<a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj612867(v=ws.11)">官网</a>找自己版本的key，这里是教育版的key）：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">slmgr.vbs -ipk NW6C2-QMPVW-D7KKK-3GKT6-VCFB2</span><br></pre></td></tr></table></figure></li><li><p>设置kms服务器，ip:port换成上面kms server docker的ip:port，默认端口是1688</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">slmgr.vbs -skms 1.2.3.4:6666</span><br></pre></td></tr></table></figure></li><li><p>连线激活(稍等一会)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">slmgr.vbs -ato</span><br></pre></td></tr></table></figure></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;KMS-server-docker&quot;&gt;&lt;a href=&quot;#KMS-server-docker&quot; class=&quot;headerlink&quot; title=&quot;KMS server - docker&quot;&gt;&lt;/a&gt;KMS server - docker&lt;/h1&gt;&lt;p&gt;&lt;a hre</summary>
-      
-    
-    
-    
-    
-    <category term="others" scheme="https://learner0x5a.github.io/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>本地文件丢失，如何恢复hexo博客</title>
-    <link href="https://learner0x5a.github.io/2021/01/06/restore/"/>
-    <id>https://learner0x5a.github.io/2021/01/06/restore/</id>
-    <published>2021-01-06T12:45:16.000Z</published>
-    <updated>2021-01-06T12:45:49.240Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="恢复hexo"><a href="#恢复hexo" class="headerlink" title="恢复hexo"></a>恢复hexo</h2><h3 id="重新init"><a href="#重新init" class="headerlink" title="重新init"></a>重新init</h3><p>hexo之前push到git上的只有生成的html/图片，没有md文件。</p><p>如何恢复？</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install html2text</span><br></pre></td></tr></table></figure><p>把html转为文本，再手动重建md。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;恢复hexo&quot;&gt;&lt;a href=&quot;#恢复hexo&quot; class=&quot;headerlink&quot; title=&quot;恢复hexo&quot;&gt;&lt;/a&gt;恢复hexo&lt;/h2&gt;&lt;h3 id=&quot;重新init&quot;&gt;&lt;a href=&quot;#重新init&quot; class=&quot;headerlink&quot; titl</summary>
       
     
     

@@ -355,6 +355,70 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2022/08/28/binaryninja-linux/" >
+            
+                <span>binaryninja-linux</span>
+        </a>
+        <div class="abstract-content">
+            BinaryNinja Linux安装在一个没有图形界面的Linux里，如果直接按照官方文档的说明安装python api，在调用时会报错“License not valid”。
+解决方案：把license文件放到~/.binaryninja/目录下，且命名为license.dat。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/08/28</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2022/08/27/VSCodeIssues/" >
+            
+                <span>vscode 有关bug</span>
+        </a>
+        <div class="abstract-content">
+            1. Python调试器不起效按F5，或者通过菜单启动调试，均无反应。
+解决方案：降级python插件。在应用商店的插件页面，已安装的插件的“卸载”按钮旁边的箭头，下拉菜单中选择其他版本安装，降级至2021年的最后一个版本。
+2. remote ssh一直超时除了网络原因之外，如果目标服务器ip不变但ssh key变了，也会出现这种情况。
+解决方案：删掉known_hosts里面的目标服务器条目；然后在vscode Remote-SSH:Settings (Ctrl-Shift-P) 里面，取消勾选Use Local Server。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/08/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2022/06/09/AddtionalBertEmebdding/" >
             
                 <span>给BERT添加额外的输入/特征/嵌入</span>
@@ -878,9 +942,39 @@ How to use additional input features for NER?
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 27
+        Total : 29
         </div>
         <!-- search  -->
         
@@ -893,6 +987,16 @@ How to use additional input features for NER?
     
     <div class="archive-year"> 2022 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2022/08/28/binaryninja-linux/" >binaryninja-linux</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2022/08/27/VSCodeIssues/" >vscode 有关bug</a>
+        </li>
     
     
         <li class="archive-post-item">
