@@ -355,6 +355,38 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2021/08/26/data-balance/" >
+            
+                <span>机器学习中分类问题的数据均衡</span>
+        </a>
+        <div class="abstract-content">
+            问题：真实世界的数据分布不一定均衡，那为什么大多数ML/DL要做数据均衡？答案：根据场景来决定是否要数据均衡
+场景1: 癌症二分类真实数据分布是：绝大多数人没有癌症，极少数人有癌症；如果不做数据均衡，那么一个ML分类器会倾向于把所有样本判断成没有癌症，即全是漏报，没有误报 在辅助医生诊断时，显然是不行的：可以有误报，尽量没有漏报；所以在训练模型时要做数据均衡。
+场景2: 英文字母识别真实数据分布不是均匀分布，高频字母例如e，低频字母例如v；
+如果做数据均衡，那么训练后的分类器对于每个字母分类错误的概率都是一样的； 如果不做数据均衡，那么训练后的分类器对于每个字母分类错误的概率不一样，错误...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/26</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "AI">AI</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2021/08/16/hyper-share/" >
             
                 <span>Hyper-V挂载共享文件夹</span>
@@ -643,51 +675,6 @@ Tested with IDA pro 6.8 on Ubuntu 18.04 64bit.
             <div class= abstract-tags >
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "BookReading">BookReading</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/01/09/linuxBoot/" >
-            
-                <span>Linux 手动引导</span>
-        </a>
-        <div class="abstract-content">
-            服务器断电后重启，引导出错，需要手动引导进入系统。
-Linux启动流程
-BIOS程序
-GRUB引导
-内核引导
-调用虚拟文件系统initrd
-加载驱动
-加载真正的根文件系统
-执行/sbin/init
-系统初始化
-
-
-启动终端
-
-GRUB手动引导内核在grub shell中ls查看硬盘分区情况，常见的分区方案是，对于硬盘sdx，sdx1为boot分区(/boot)，sdx2为swap分区([SWAP])，sdx3为根分区(/)。
-逐个尝试ls (hdx, y)/boot/grub，找到根文件系统所在分区（通常y=gpt3），也可以ls (hdx, y)查看该分区下所有文件。
-如果手上有Liv...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "others">others</a>
     
 </div>
             
@@ -1161,9 +1148,24 @@ GRUB手动引导内核在grub shell中ls查看硬盘分区情况，常见的分�
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 29
+        Total : 30
         </div>
         <!-- search  -->
         
@@ -1176,6 +1178,11 @@ GRUB手动引导内核在grub shell中ls查看硬盘分区情况，常见的分�
     
     <div class="archive-year"> 2022 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2022/08/28/binaryninjanote/" >BinaryNinja笔记</a>
+        </li>
     
     
         <li class="archive-post-item">

@@ -6,7 +6,7 @@
   <link href="https://learner0x5a.github.io/atom.xml" rel="self"/>
   
   <link href="https://learner0x5a.github.io/"/>
-  <updated>2022-08-27T16:22:16.180Z</updated>
+  <updated>2022-08-28T07:49:14.941Z</updated>
   <id>https://learner0x5a.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BinaryNinja笔记</title>
+    <link href="https://learner0x5a.github.io/2022/08/28/binaryninjanote/"/>
+    <id>https://learner0x5a.github.io/2022/08/28/binaryninjanote/</id>
+    <published>2022-08-28T07:38:07.000Z</published>
+    <updated>2022-08-28T07:49:14.941Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MLIL"><a href="#MLIL" class="headerlink" title="MLIL"></a>MLIL</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 获取当前函数的第22条mlil</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>inst = current_mlil[<span class="number">22</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># mlil指令</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>inst</span><br><span class="line">&lt;mlil: [rax_1 + <span class="number">8</span>].q(rdi_1)&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指令类型</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>inst.operation</span><br><span class="line">&lt;MediumLevelILOperation.MLIL_CALL: <span class="number">51</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># CALL指令参数</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>inst.params</span><br><span class="line">[&lt;mlil: rdi_1&gt;]</span><br><span class="line"></span><br><span class="line"><span class="comment"># CALL指令的目标</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>inst.dest</span><br><span class="line">&lt;mlil: [rax_1 + <span class="number">8</span>].q&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># CALL指令目标值</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>inst.dest.value</span><br><span class="line">&lt;undetermined&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># CALL指令目标的类型</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>inst.dest.operation</span><br><span class="line">&lt;MediumLevelILOperation.MLIL_LOAD: <span class="number">4</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># CALL指令的第一个参数</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>inst.params[<span class="number">0</span>]</span><br><span class="line">&lt;mlil: rdi_1&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(inst.params[<span class="number">0</span>])</span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">binaryninja</span>.<span class="title">mediumlevelil</span>.<span class="title">MediumLevelILVar</span>&#x27;&gt;</span></span><br><span class="line"><span class="class"></span></span><br><span class="line">&gt;&gt;&gt; para1 = inst.params[0]</span><br><span class="line"></span><br><span class="line"><span class="comment"># CALL指令参数的操作数</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>para1.operands</span><br><span class="line">[&lt;var void* rdi_1&gt;]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>para1.operands[<span class="number">0</span>]</span><br><span class="line">&lt;var void* rdi_1&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(para1.operands[<span class="number">0</span>])</span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">binaryninja</span>.<span class="title">variable</span>.<span class="title">Variable</span>&#x27;&gt;</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">&gt;&gt;&gt; <span class="title">para1</span>.<span class="title">operands</span>[0].<span class="title">function</span></span></span><br><span class="line"><span class="class">&lt;<span class="title">func</span>:</span> x86_64@<span class="number">0x1ad6b</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>para1.operands[<span class="number">0</span>].function.mlil</span><br><span class="line">&lt;mlil func: x86_64@<span class="number">0x1ad6b</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>ml = para1.operands[<span class="number">0</span>].function.mlil</span><br><span class="line"><span class="comment"># 获取use</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>ml.get_var_uses(para1.operands[<span class="number">0</span>])</span><br><span class="line">[&lt;mlil: <span class="keyword">if</span> (rdi_1 == <span class="number">0</span>) then <span class="number">19</span> @ <span class="number">0x1ada4</span> <span class="keyword">else</span> <span class="number">21</span> @ <span class="number">0x1ad9d</span>&gt;, &lt;mlil: rax_1 = [rdi_1 + <span class="number">0x10</span>].q&gt;, &lt;mlil: [rax_1 + <span class="number">8</span>].q(rdi_1)&gt;]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取def</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>ml.get_var_definitions(para1.operands[<span class="number">0</span>])</span><br><span class="line">[&lt;mlil: rdi_1 = [r12 + (rbp &lt;&lt; <span class="number">3</span>)].q&gt;]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>ml.get_var_definitions(para1.operands[<span class="number">0</span>])[<span class="number">0</span>]</span><br><span class="line">&lt;mlil: rdi_1 = [r12 + (rbp &lt;&lt; <span class="number">3</span>)].q&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 作为def的mlil指令的地址，该地址和assembly是对应的</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">hex</span>(ml.get_var_definitions(para1.operands[<span class="number">0</span>])[<span class="number">0</span>].address)</span><br><span class="line"><span class="string">&#x27;0x1ad94&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><p>根据<a href="https://docs.binary.ninja/dev/bnil-overview.html">官方文档</a>的说法，从assembly到low-level il做了常量传播、tail-call等分析，</p><p>从low-level il到medium-level il做了VSA、类型推断、函数参数解析等，</p><p>这些分析怎么实现的？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;MLIL&quot;&gt;&lt;a href=&quot;#MLIL&quot; class=&quot;headerlink&quot; title=&quot;MLIL&quot;&gt;&lt;/a&gt;MLIL&lt;/h1&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;p</summary>
+      
+    
+    
+    
+    
+    <category term="Tools" scheme="https://learner0x5a.github.io/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>binaryninja-linux</title>
@@ -441,30 +463,6 @@
     
     
     <category term="BookReading" scheme="https://learner0x5a.github.io/tags/BookReading/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 手动引导</title>
-    <link href="https://learner0x5a.github.io/2021/01/09/linuxBoot/"/>
-    <id>https://learner0x5a.github.io/2021/01/09/linuxBoot/</id>
-    <published>2021-01-09T12:56:37.000Z</published>
-    <updated>2021-01-09T13:08:08.547Z</updated>
-    
-    <content type="html"><![CDATA[<p>服务器断电后重启，引导出错，需要手动引导进入系统。</p><h1 id="Linux启动流程"><a href="#Linux启动流程" class="headerlink" title="Linux启动流程"></a>Linux启动流程</h1><ol><li>BIOS程序</li><li>GRUB引导</li><li>内核引导</li><li>调用虚拟文件系统initrd<ul><li>加载驱动</li><li>加载真正的根文件系统</li><li>执行/sbin/init</li><li>系统初始化</li></ul></li><li>启动终端</li></ol><h1 id="GRUB手动引导内核"><a href="#GRUB手动引导内核" class="headerlink" title="GRUB手动引导内核"></a>GRUB手动引导内核</h1><p>在grub shell中ls查看硬盘分区情况，常见的分区方案是，对于硬盘sdx，sdx1为boot分区(/boot)，sdx2为swap分区([SWAP])，sdx3为根分区(/)。</p><p>逐个尝试ls (hdx, y)/boot/grub，找到根文件系统所在分区（通常y=gpt3），也可以ls (hdx, y)查看该分区下所有文件。</p><p>如果手上有LiveCD，可以进LiveCD看一下分区情况。</p><p>所以该机器的引导参数如下:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 指定根文件系统</span></span><br><span class="line">$ root=(hd3,gpt3)</span><br><span class="line"><span class="comment"># 指定内核</span></span><br><span class="line">$ linux /boot/vmlinuz[Tab补全] root=/dev/sdb3</span><br><span class="line"><span class="comment"># 指定虚拟文件系统</span></span><br><span class="line">$ initrd /boot/initrd[Tab补全].img</span><br><span class="line"><span class="comment"># 启动</span></span><br><span class="line">$ boot</span><br></pre></td></tr></table></figure><p>tab补全时，虽然有四个内核可选，但有两个加载失败，最后加载5.3.0-62及对应的initrd，引导成功。</p><h1 id="从U盘进入Livecd，查看文件系统-磁盘状态"><a href="#从U盘进入Livecd，查看文件系统-磁盘状态" class="headerlink" title="从U盘进入Livecd，查看文件系统/磁盘状态"></a>从U盘进入Livecd，查看文件系统/磁盘状态</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">df -h <span class="comment"># 查看已挂载的磁盘分区及挂载点</span></span><br><span class="line">fdisk -l <span class="comment"># 查看磁盘分区，包括未挂载的磁盘</span></span><br><span class="line">lsblk -l <span class="comment"># 查看磁盘分区，包括未挂载的磁盘</span></span><br></pre></td></tr></table></figure><p>可以发现，当前boot在sdd，挂载点是/cdrom，即sdd是U盘上livecd的系统。</p><p>查看另外的磁盘，找到EFI分区和swap分区所在的磁盘，比如sdb，说明原来的系统在sdb上。</p><p>根文件系统在Type:Linux所在的分区，例如/dev/sdb3，对应到grub里面，应该是某块硬盘的第三个分区，例如(hd3,gpt3)。</p><p><strong>注意：USB的插入会影响grub中硬盘的编号，同一块硬盘有时候是hd3，有时候是hd4</strong></p><h1 id="如何判断文件系统是否需要修复？"><a href="#如何判断文件系统是否需要修复？" class="headerlink" title="如何判断文件系统是否需要修复？"></a>如何判断文件系统是否需要修复？</h1><p>一般情况下，linux系统启动阶段，如果文件系统出现了crash，会提示有orphan node，无法正常启动。此时，需要使用fsck来修复文件系统。一般来说，异常断电就可能出现这种情况。</p><p>异常断电情况下，需要手动按照之前记录的挂载目录参数来手动进行引导。如果手动引导仍然无法成功，大概率是文件系统挂了，此时需要先修复文件系统，再进入grub中手动引导。</p><p>grub启动引导记录的修复（通过boot-repair修复后，再手动检查grub启动引导配置文件是否无误），可以保证正常重启服务器是没问题的。</p><p>但是通常异常断电的情况下，grub引导又会出错从而导致系统无法正常被引导启动。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;服务器断电后重启，引导出错，需要手动引导进入系统。&lt;/p&gt;
-&lt;h1 id=&quot;Linux启动流程&quot;&gt;&lt;a href=&quot;#Linux启动流程&quot; class=&quot;headerlink&quot; title=&quot;Linux启动流程&quot;&gt;&lt;/a&gt;Linux启动流程&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;BIO</summary>
-      
-    
-    
-    
-    
-    <category term="others" scheme="https://learner0x5a.github.io/tags/others/"/>
     
   </entry>
   
